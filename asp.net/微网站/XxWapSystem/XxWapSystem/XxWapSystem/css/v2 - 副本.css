@@ -1,0 +1,438 @@
+body {
+	background: rgb(255, 255, 255);
+}
+.app-download-bar .wline {
+	background: rgb(208, 208, 208); width: 100%; height: 1px; bottom: 0px; position: absolute;
+}
+#topbar {
+	height: 55px;
+}
+.nav_bg_top {
+	background: url("../images/toplogo_bg.png") repeat-x;
+}
+#logo {
+	background-position: 10px 5px; background-image: url("../images/hd/logo.png?"); background-repeat: no-repeat; background-size: 130px 42px;
+}
+#city_link {
+	padding: 10px; top: 10px;
+}
+#city_link a:link {
+	font-size: 14px;
+}
+#city_link a:visited {
+	font-size: 14px;
+}
+.icon_location {
+	width: 18px; height: 15px; background-image: url("../images/hd/icon_location.png?"); background-size: 15px 15px;
+}
+.icon_download {
+	width: 17px; height: 18px; background-image: url("../images/hd/icon_download.png"); background-size: 17px 18px;
+}
+.nav_btn_group {
+	margin: 0px auto; width: 320px; height: 190px;
+}
+.nav_btn_group ul {
+	padding-top: 15px; padding-bottom: 15px;
+}
+.nav_btn_group li {
+	width: 52px; height: 82px; text-align: center; line-height: 30px; margin-left: 20px; float: left;
+}
+.nav_btn_group li a:link {
+	color: rgb(51, 51, 51);
+}
+.nav_btn_group li a:visited {
+	color: rgb(51, 51, 51);
+}
+.nav_btn_group li i {
+	background-position: center; border-radius: 5px; width: 52px; height: 52px; display: block; background-repeat: no-repeat;
+}
+.nav_icon_newhouse {
+	background-image: url("../images/640/icon_newhouse.png"); background-color: rgb(255, 198, 0);
+}
+.nav_icon_sellhouse {
+	background-image: url("../images/640/icon_sellhouse.png"); background-color: rgb(112, 210, 152);
+}
+.nav_icon_renthouse {
+	background-image: url("../images/640/icon_renthouse.png"); background-color: rgb(255, 128, 94);
+}
+.nav_icon_event {
+	background-image: url("../images/640/icon_event.png"); background-color: rgb(112, 210, 152);
+}
+.nav_icon_tlf {
+	background-image: url("../images/640/icon_tlf.png"); background-color: rgb(255, 128, 94);
+}
+.nav_icon_tjf {
+	background-image: url("../images/640/icon_tjf.png"); background-color: rgb(115, 187, 255);
+}
+.nav_icon_coupon {
+	background-image: url("../images/640/icon_coupon.png"); background-color: rgb(248, 142, 183);
+}
+.nav_icon_news {
+	background-image: url("../images/640/icon_news.png"); background-color: rgb(255, 162, 0);
+}
+.nav_icon_decoration {
+	background-image: url("../images/640/inon_decoration1.png"); background-color: rgb(255, 198, 0);
+}
+.nav_btn_group ul {
+	padding-top: 15px; padding-bottom: 15px;
+}
+.nav_btn_group {
+	width: 320px; height: 200px;
+}
+.nav_btn_group li {
+	width: 55px; height: 90px;
+}
+.nav_btn_group li i {
+	width: 55px; height: 55px; background-size: 37px;
+}
+.nav_btn_group ul {
+	padding-top: 15px; padding-bottom: 15px;
+}
+.nav_btn_group {
+	width: 360px; height: 220px;
+}
+.nav_btn_group li {
+	width: 65px; height: 100px;
+}
+.nav_btn_group li i {
+	width: 65px; height: 65px; background-size: 37px;
+}
+.nav_btn_group ul {
+	padding-top: 20px; padding-bottom: 20px;
+}
+.nav_btn_group {
+	width: 380px; height: 230px;
+}
+.nav_btn_group li {
+	width: 70px; height: 100px;
+}
+.nav_btn_group li i {
+	width: 70px; height: 70px; background-size: 37px;
+}
+.nav_btn_group {
+	width: 640px; height: 320px;
+}
+.nav_btn_group ul {
+	padding-top: 20px; padding-bottom: 20px;
+}
+.nav_btn_group li {
+	width: 104px; height: 140px;
+}
+.nav_btn_group li i {
+	width: 104px; height: 104px; background-size: 74px;
+}
+.nav_btn_group {
+	width: 600px; height: 320px;
+}
+.nav_btn_group li {
+	width: 104px; height: 134px;
+}
+.nav_btn_group li i {
+	width: 104px; height: 104px; background-size: 74px;
+}
+.bg2 {
+	background-color: rgb(245, 245, 245);
+}
+.tplist .bg2 {
+	background-color: rgb(245, 245, 245);
+}
+.search_wrap {
+	background: rgb(255, 255, 255); margin: 5px auto; border: 1px solid rgb(196, 196, 196); width: 96%; height: 32px; overflow: hidden;
+}
+.m_wrap {
+	position: relative;
+}
+.topnav_menu {
+	background: rgb(91, 175, 247); top: 42px; width: 100%; height: auto; margin-right: 35px; filter: alpha(opacity=90); position: absolute; z-index: 10000; opacity: 0.9; -moz-opacity: 0.9; -khtml-opacity: 0.9;
+}
+.topnav_menu ul {
+	padding-right: 40px;
+}
+.topnav_menu li {
+	width: 20%; text-align: center; line-height: 30px; float: left;
+}
+.topnav_menu li a:link {
+	color: rgb(255, 255, 255); display: block;
+}
+.topnav_menu li a:visited {
+	color: rgb(255, 255, 255); display: block;
+}
+.topnav_menu li a:hover {
+	color: rgb(255, 162, 0);
+}
+.topnav_contract {
+	top: 0px; width: 40px; height: 60px; right: 0px; position: absolute; cursor: pointer;
+}
+[class*='icon-'] {
+	width: 20px; height: 20px; display: block; background-image: url("../images/icon_all.png?"); background-repeat: no-repeat;
+}
+.icon-up {
+	
+}
+.topnav_contract .icon-up {
+	margin-top: 18px; margin-left: 8px;
+}
+.choose_opt_list {
+	padding-right: 40px;
+}
+.choose_switch {
+	top: 0px; width: 30px; right: 0px; position: absolute; cursor: pointer;
+}
+.choose_switch i.icon-on {
+	background-position: -65px 0px;
+}
+.icon-off {
+	background-position: -45px 0px;
+}
+.choose_switch .icon-on {
+	margin-top: 8px; margin-left: 8px;
+}
+.choose_switch .icon-off {
+	margin-top: 8px; margin-left: 8px;
+}
+.choose_opt dt {
+	background: rgb(255, 255, 255);
+}
+.choose_opt dl {
+	padding-bottom: 5px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.choose_opt dl.choose_line {
+	height: 30px; overflow: hidden;
+}
+.choose_more {
+	margin: 5px auto; width: 120px; height: 25px; text-align: center; color: rgb(153, 153, 153); line-height: 25px; display: block; position: relative; cursor: pointer;
+}
+.choose_more .icon-up {
+	background-position: -120px 0px;
+}
+.choose_more .icon-down {
+	background-position: -140px 0px;
+}
+.choose_more [class*='icon-'] {
+	top: 2px; right: 0px; position: absolute;
+}
+.choose_selected {
+	
+}
+.choose_sel_label {
+	margin: 5px 0px 5px 5px; color: rgb(143, 143, 143); line-height: 25px; float: left;
+}
+.choose_selected ul {
+	
+}
+.choose_selected .icon-close {
+	background-position: 5px 5px; top: 0px; width: 25px; height: 25px; right: 0px; position: absolute; cursor: pointer; background-image: url("../images/hd/icon_remove.png"); background-size: 16px 16px; background-color: rgb(255, 102, 0);
+}
+.choose_selected ul {
+	padding: 0px 10px;
+}
+.choose_selected li {
+	background: rgb(245, 245, 245); margin: 5px; height: 25px; line-height: 25px; overflow: hidden; padding-right: 30px; padding-left: 5px; float: left; position: relative;
+}
+.choose_selected label {
+	color: rgb(143, 143, 143); padding-right: 5px; font-weight: normal;
+}
+.order_btn {
+	top: 4px; height: 30px; right: 5px; position: absolute;
+}
+.order_btn span {
+	background: rgb(248, 248, 248); padding: 0px 10px; border: 1px solid rgb(222, 222, 222); line-height: 25px; font-size: 12px; float: left; cursor: pointer;
+}
+.order_btn span i {
+	width: 18px; height: 17px; display: inline-table;
+}
+[class*='cur_title'] {
+	text-align: left; padding-left: 10px; font-size: 14px;
+}
+.order_btn span.selected {
+	background: rgb(255, 255, 255); color: rgb(250, 72, 0);
+}
+.order_btn span i.icon-up {
+	background-position: -80px 0px;
+}
+.order_btn span.selected i.icon-up {
+	background-position: -100px 0px;
+}
+.order_btn span i.icon-down {
+	background-position: -156px 0px;
+}
+.order_btn span.selected i.icon-down {
+	background-position: -178px 0px;
+}
+.choose_opt dd {
+	margin-bottom: 5px;
+}
+.h2_tabtitle {
+	
+}
+.nodata_tag {
+	background: rgb(255, 255, 255); width: 100%; height: auto; line-height: 25px;
+}
+#sugglist {
+	background: 0px 0px rgb(255, 255, 255); padding: 3px 5px 5px; border: 1px solid rgb(221, 221, 221); top: 98px; display: none; position: absolute; z-index: 9999;
+}
+#sugglist ul {
+	margin: 0px; padding: 0px;
+}
+#sugglist li {
+	list-style: none; height: 25px; color: rgb(147, 147, 147); line-height: 25px; overflow: hidden; font-family: "Tahoma"; font-size: 12px; cursor: pointer;
+}
+#sugglist li:active {
+	background: rgb(255, 162, 0); color: rgb(255, 255, 255);
+}
+.loading {
+	background-image: url("../images/loading.gif"); background-repeat: no-repeat;
+}
+.h2_v2 {
+	width: 100%; height: 35px; clear: both; margin-top: 20px; border-top-color: rgb(232, 232, 232); border-top-width: 1px; border-top-style: solid; position: relative;
+}
+.h2_v2 .title_news {
+	background: 0px 0px rgb(115, 187, 255); padding: 0px 15px; border: 1px solid rgb(84, 164, 240); top: 0px; height: 25px; color: rgb(255, 255, 255); line-height: 25px; font-weight: bold; margin-left: 15px; position: absolute;
+}
+.h2_v2 .title_news a:link {
+	color: rgb(255, 255, 255);
+}
+.h2_v2 .title_news a:visited {
+	color: rgb(255, 255, 255);
+}
+.cnews_list #redone {
+	background: url("../images/hd/arrow_item.png") no-repeat 10px 5px / 15px 15px; height: 60px; line-height: 25px; padding-left: 30px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.cnews_list #greyone {
+	background: url("../images/hd/arrow_item_2.png") no-repeat 10px 5px / 15px 15px; height: 60px; line-height: 25px; padding-left: 30px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.cnews_list li:last-child {
+	border: currentColor;
+}
+.cnews_list li span {
+	color: rgb(102, 102, 102); clear: both;
+}
+.cnews_list li a:link {
+	height: 30px; overflow: hidden; display: block;
+}
+.cnews_list li a:visited {
+	height: 30px; overflow: hidden; display: block;
+}
+.cpost_list li a:link {
+	height: 30px; overflow: hidden; display: block;
+}
+.cpost_list li a:visited {
+	height: 30px; overflow: hidden; display: block;
+}
+.cpost_list li {
+	height: 60px; line-height: 25px; overflow: hidden; padding-left: 15px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.cpost_list li:last-child {
+	border: currentColor;
+}
+.cpost_list li p {
+	color: rgb(102, 102, 102); padding-left: 5px; clear: both;
+}
+.csearch_wrap {
+	background: 0px 0px rgb(255, 255, 255); margin: 5px auto; border: 1px solid rgb(196, 196, 196); width: 96%; height: 32px; clear: both; position: relative;
+}
+.csearch-input {
+	width: 100%; height: 32px; overflow: hidden; clear: both; position: relative; z-index: 1000;
+}
+.csearch-input .textInput {
+	background: 0px 0px rgb(255, 255, 255); border: 0px currentColor; left: 80px; top: 0px; width: 100%; height: 27px; color: rgb(129, 129, 129); line-height: 27px; padding-top: 3px !important; padding-left: 5px; font-size: 14px; margin-top: 1px; float: left; position: absolute;
+}
+.search-submit {
+	background: url("../images/hd/icon_search.png") no-repeat 8px 6px / 24px 24px rgb(80, 173, 232); border-radius: 0px; border: currentColor; top: 0px; width: 36px; height: 32px; right: 0px; text-indent: -999em; overflow: hidden; position: absolute; cursor: pointer;
+}
+.choose_title {
+	width: 70px; height: 32px; text-align: center; color: rgb(102, 102, 102); line-height: 32px; padding-right: 10px; font-size: 14px; display: block; position: relative;
+}
+.choose_title .icon-arrow {
+	background-position: -65px 0px; top: 8px; right: 0px; position: absolute;
+}
+.choose_opts {
+	background: rgb(255, 255, 255); border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(196, 196, 196) rgb(196, 196, 196); left: -1px; top: 31px; width: 80px; display: none; position: absolute; z-index: 1000;
+}
+.choose_opts li {
+	height: 30px; text-align: center; line-height: 30px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.choose_opts li:active {
+	background: rgb(255, 162, 1); color: rgb(255, 255, 255);
+}
+.news-photo {
+	position: relative;
+}
+.news-photo .m_wrap {
+	top: 0px; position: fixed; z-index: 100;
+}
+.ad_banner {
+	margin: 5px auto; text-align: center;
+}
+.ad_banner img {
+	width: 96%;
+}
+.index_ad_banner img {
+	width: 320px;
+}
+.img_ad {
+	margin: 0px auto; width: 320px; height: 130px; overflow: hidden; position: relative;
+}
+.img_ad img {
+	width: 320px; height: 130px;
+}
+.img_ad_titleP1 {
+	text-transform: uppercase; margin-right: 20px;
+}
+.img_wrap {
+	background: rgb(102, 102, 102); left: 0px; top: 0px; width: 320px; height: 130px; position: absolute;
+}
+.img_wrap ul {
+	left: 0px; position: absolute;
+}
+.img_wrap ul li {
+	width: 320px; height: 130px; float: left; display: inline;
+}
+.imgFlashIco {
+	
+}
+.imgFlashIco li {
+	width: 20px; height: 26px; text-align: center; color: rgb(255, 255, 255); line-height: 26px; font-size: 14px; font-weight: bold; margin-top: 2px; margin-left: 4px; float: left; cursor: pointer;
+}
+.imgFlashIco li.on {
+	color: rgb(255, 162, 0);
+}
+.imgFlashIco li:first-child {
+	color: rgb(255, 162, 0);
+}
+.imgFlashSpan {
+	height: 26px; color: rgb(255, 0, 0); line-height: 26px; overflow: hidden; margin-left: 8px; display: inline-block; cursor: pointer;
+}
+#banner_swipe {
+	
+}
+#close_bannerad {
+	background: url("../images/hd/close_top_right.png") no-repeat right top / 22px 20px; top: 0px; width: 32px; height: 32px; right: 0px; text-indent: -999em; position: absolute; z-index: 100;
+}
+#banner_swipe .swipe {
+	overflow: hidden; visibility: hidden; position: relative;
+}
+.swipe-wrap {
+	overflow: hidden; position: relative;
+}
+.swipe-wrap > li {
+	width: 100%; float: left; position: relative;
+}
+.swipe-wrap img {
+	width: 100%;
+}
+#banner_swipe nav {
+	left: 0px; right: 0px; bottom: 2px; font-size: 14px; position: absolute;
+}
+#position {
+	list-style: none; margin: 0px; padding: 0px; text-align: center;
+}
+#position li {
+	background: rgb(255, 255, 255); margin: 0px 1px; border-radius: 10px; width: 8px; height: 8px; display: inline-block;
+}
+#position li.current {
+	background-color: rgb(18, 147, 220);
+}
+#position li:first-child {
+	background-color: rgb(18, 147, 220);
+}

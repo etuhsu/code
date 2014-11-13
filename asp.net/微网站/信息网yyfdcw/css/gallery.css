@@ -1,0 +1,147 @@
+body {
+	background-color: rgb(57, 57, 57);
+}
+#app-download-bar {
+	display: none;
+}
+#topbar {
+	z-index: 1000000;
+}
+body.ps-active {
+	background: rgb(0, 0, 0); overflow: hidden;
+}
+body.ps-building {
+	background: rgb(0, 0, 0); overflow: hidden;
+}
+div.ps-active {
+	background: rgb(0, 0, 0); overflow: hidden;
+}
+div.ps-building {
+	background: rgb(0, 0, 0); overflow: hidden;
+}
+body.ps-active * {
+	display: none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+div.ps-active * {
+	display: none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+body.ps-active *:focus {
+	outline: 0px;
+}
+div.ps-active *:focus {
+	outline: 0px;
+}
+div.ps-document-overlay {
+	background: rgb(0, 0, 0);
+}
+div.ps-uilayer {
+	background: rgb(0, 0, 0); cursor: pointer;
+}
+div.ps-zoom-pan-rotate {
+	background: rgb(0, 0, 0);
+}
+div.ps-zoom-pan-rotate * {
+	display: block;
+}
+div.ps-carousel-item img {
+	width: 320px; height: 240px;
+}
+div.ps-carousel-item-loading {
+	background: url("../images/loader.gif") no-repeat center;
+}
+div.ps-carousel-item-error {
+	background: url(".../images/error.gif") no-repeat center;
+}
+div.ps-caption {
+	background: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255); font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif; font-size: 13px; border-bottom-color: rgb(66, 64, 63); border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.ps-caption * {
+	display: inline;
+}
+div.ps-caption-bottom {
+	border-top-color: rgb(66, 64, 63); border-bottom-color: currentColor; border-top-width: 1px; border-bottom-width: medium; border-top-style: solid; border-bottom-style: none; min-height: 44px;
+}
+div.ps-caption-content {
+	padding: 13px; display: block;
+}
+div.ps-toolbar {
+	background: rgb(0, 0, 0); height: 44px; text-align: center; color: rgb(255, 255, 255); font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif; font-size: 13px; border-top-color: rgb(66, 64, 63); border-top-width: 1px; border-top-style: solid; display: table; table-layout: fixed;
+}
+div.ps-toolbar * {
+	display: block;
+}
+div.ps-toolbar-top {
+	border-top-color: currentColor; border-bottom-color: rgb(66, 64, 63); border-top-width: medium; border-bottom-width: 1px; border-top-style: none; border-bottom-style: solid;
+}
+div.ps-toolbar-close {
+	display: table-cell; cursor: pointer;
+}
+div.ps-toolbar-previous {
+	display: table-cell; cursor: pointer;
+}
+div.ps-toolbar-next {
+	display: table-cell; cursor: pointer;
+}
+div.ps-toolbar-play {
+	display: table-cell; cursor: pointer;
+}
+div.ps-toolbar div div.ps-toolbar-content {
+	margin: 0px auto; width: 44px; height: 44px; background-image: url("../img/icons.png"); background-repeat: no-repeat;
+}
+div.ps-toolbar-close div.ps-toolbar-content {
+	background-position: 0px 0px;
+}
+div.ps-toolbar-previous div.ps-toolbar-content {
+	background-position: -44px 0px;
+}
+div.ps-toolbar-previous-disabled div.ps-toolbar-content {
+	background-position: -44px -44px;
+}
+div.ps-toolbar-next div.ps-toolbar-content {
+	background-position: -132px 0px;
+}
+div.ps-toolbar-next-disabled div.ps-toolbar-content {
+	background-position: -132px -44px;
+}
+div.ps-toolbar-play div.ps-toolbar-content {
+	background-position: -88px 0px;
+}
+@media not all, not all, only screen and (min-resolution:240dpi)
+{
+div.ps-toolbar div div.ps-toolbar-content {
+	background-image: url("icons@2x.png"); background-size: 176px 88px; -moz-background-size: 176px 88px; -o-background-size: 176px 88px; -webkit-background-size: 176px 88px;
+}
+}
+.albnav {
+	margin: 8px; padding: 2px 6px 6px; border: 1px solid rgb(66, 66, 66); border-image: none; background-color: rgb(7, 7, 7);
+}
+.albnav a {
+	margin-right: 18px; float: left; display: block;
+}
+a.ablue:link {
+	color: rgb(0, 136, 231); text-decoration: none;
+}
+a.ablue:visited {
+	color: rgb(0, 136, 231); text-decoration: none;
+}
+a.ablue:hover {
+	color: rgb(0, 136, 231); text-decoration: none;
+}
+a.ablue:active {
+	color: rgb(0, 136, 231); text-decoration: none;
+}
+#scroller {
+	background: rgb(7, 7, 7); padding: 0px; width: 396px; height: 16px; margin-top: 3px; margin-bottom: 3px; position: relative; z-index: 50000; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#wrapper {
+	width: 100%; overflow: auto; position: relative; z-index: 10000;
+}
+#imgdetail {
+	padding: 3px; left: 6px; bottom: 70px; color: rgb(255, 255, 255); position: fixed; z-index: 50000; background-color: rgba(0, 0, 0, 0.5);
+}
+.backbox {
+	left: 0px; top: 0px; right: 0px; position: fixed; z-index: 10000;
+}
+.album_tag {
+	border: 1px solid rgb(88, 88, 88); border-image: none; left: 0px; height: 50px; right: 0px; bottom: 0px; position: fixed; z-index: 10000; background-color: rgb(46, 46, 46);
+}

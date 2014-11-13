@@ -1,0 +1,344 @@
+﻿.login
+{
+    padding-top: 10px;
+    margin: auto;
+    width: 98%;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+
+    .login hr
+    {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 93%;
+        border: 1px solid #C9C9C9;
+    }
+
+
+.login .inputBox
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #C9C9C9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #F1F1F1 inset;
+    padding: 9px 0 9px 8px;
+    outline: medium none;
+    line-height: 18px;
+    width: 92%;
+    font-size: 14px;
+}
+
+.login .inputBox2
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #1bbc9b;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #F1F1F1 inset;
+    padding: 9px 0 9px 8px;
+    outline: medium none;
+    line-height: 18px;
+    width: 92%;
+    font-size: 14px;
+}
+
+.login .login_button
+{
+    right: 0;
+    position: absolute;
+    width: 100px;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,#ff5128,#ff5128);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5128), to(#ff5128));
+    text-align: center;
+    border-radius: 2px;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.login .cv_button
+{
+    right: 0;
+    position: absolute;
+    width: 100px;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,#7fc58f,#7fc58f);
+    background: -webkit-gradient(linear, left top, left bottom, from(#7fc58f), to(#7fc58f));
+    text-align: center;
+    border-radius: 2px;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.login .cplogin_button
+{
+    right: 0;
+    position: absolute;
+    width: 100px;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,#0a56a4,#0a56a4);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0a56a4), to(#0a56a4));
+    text-align: center;
+    border-radius: 2px;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.login .cpregister_button
+{
+    right: 0;
+    position: absolute;
+    width: 100px;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,#05a52b,#05a52b);
+    background: -webkit-gradient(linear, left top, left bottom, from(#05a52b), to(#05a52b));
+    text-align: center;
+    border-radius: 2px;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+
+.login .loginLine
+{
+    width: 92%;
+    margin: auto;
+    text-align: left;
+    margin-top: 8px;
+    line-height: 27px;
+    height: 40px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.login .loginLine2
+{
+    width: 92%;
+    margin: auto;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 27px;
+    height: 33px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.login .Line
+{
+    width: 92%;
+    margin: auto;
+    text-align: left;
+    margin-top: 8px;
+    line-height: 27px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+
+.login .CpTips
+{
+    width: 92%;
+    margin: auto;
+    text-align: left;
+    margin-top: 8px;
+    line-height: 26px;
+    height: 83px;
+    margin-bottom: 8px;
+    position: relative;
+	font-size:15px
+}
+.login .CpTips2
+{
+    width: 92%;
+    margin: auto;
+    text-align: left;
+    margin-top: 15px;
+    line-height: 33px;
+    height: 30px;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+
+.login .OtherWay
+{
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    height: 35px;
+    padding-bottom:5px;
+    text-align: center;
+}
+
+.login .OtherWay a
+{
+    display: none;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.login .loginIcon
+{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.login .QQ
+{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+    background:url(/content/personal/pimages/loginicon.png) -148px 0px no-repeat;
+}
+.login .Sina
+{
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    margin-right: 5px;
+    background:url(/content/personal/pimages/loginicon.png) -181px 1px no-repeat;
+    border:0;
+}
+.login .Renren
+{
+    height: 25px;
+    width: 42px;
+    cursor: pointer;
+    margin-right: 5px;
+    background:url(/content/personal/pimages/loginicon.png) -210px 0px no-repeat;
+}
+
+.login .forgetPassword
+{
+    font-size: small;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    padding-left: 8px;
+}
+
+.login .forgetPassword a
+{
+    display: block;
+    color: #666666;
+    cursor: pointer;
+}
+@font-face
+{
+    font-family: 'iconic';
+    src: url('iconic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.login .tips:before
+{
+    font-family: 'iconic';
+    content: "\e001";
+    font-size: 18px;
+}
+
+.login .register
+{
+    background-color: #f6b26b;
+    border-radius: 2px;
+    padding: 5px 0;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.login .register a
+{
+    display: block;
+    color: #ffffff;
+}
+
+.login .pwdTitle
+{
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    padding: 5px 0 5px 8px;
+}
+
+    .login .pwdTitle:before
+    {
+        font-family: 'iconic';
+        content: "G";
+        font-size: 18px;
+    }
+
+.login .reset
+{
+    text-align: center;
+    font-size: 14px;
+    color: #0066CC;
+    width: 80px;
+    border: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.login .register_button
+{
+    right: 0;
+    position: absolute;
+    width: 100px;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,#05a52b,#05a52b);
+    background: -webkit-gradient(linear, left top, left bottom, from(#05a52b), to(#05a52b));
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.login .registerLine1{
+    width: 68%;
+    margin: auto;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    float:left
+}
+.login .registerLine2{
+    width: 27%;
+    margin: auto;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    float:right
+}
+
+.register .register_button
+{
+    right: 0;
+    position: absolute;
+    width: 100px;
+    color: #ffffff;
+    background: -moz-linear-gradient(top,#05a52b,#05a52b);
+    background: -webkit-gradient(linear, left top, left bottom, from(#05a52b), to(#05a52b));
+    text-align: center;
+    border-radius: 2px;
+    font-weight:bold;
+    cursor: pointer;
+    padding: 5px 0;
+}
+.loginLn
+{
+    display:inline-block;
+    width:100%;
+    margin:15px 0;
+}

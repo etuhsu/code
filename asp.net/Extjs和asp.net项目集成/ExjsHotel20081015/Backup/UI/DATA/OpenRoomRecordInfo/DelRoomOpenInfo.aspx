@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DelRoomOpenInfo.aspx.cs" Inherits="DATA_OpenRoomRecordInfo_DelRoomOpenInfo" %>

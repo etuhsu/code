@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Vifir.Web">
+</Property><Property Name="解决方案文件" Value="F:\asp.net源码\extblog20080418\Vifir.Web.sln">
+</Property><Property Name="Date" Value="2014年8月21日星期四">
+</Property><Property Name="Time" Value="15:47">
+</Property><Property Name="日志号" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="Vifir.Web" Source="Vifir.Web\Vifir.Web.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Vifir.Web" Source="Vifir.Web\Vifir.Web.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Vifir.Web.sln" Description="解决方案文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="" Source="Vifir.Web.sln" Description="无需转换">
+</Event><Event ErrorLevel="1" Project="Vifir.Web" Source="Vifir.Web\plugins\extjs\ext-2.0\examples\feed-viewer\feed-proxy.ashx.vb" Description="找不到文件。无法确定该文件是否需要升级。">
+</Event><Event ErrorLevel="3" Project="Vifir.Web" Source="Vifir.Web\plugins\extjs\ext-2.0\examples\feed-viewer\feed-proxy.ashx.vb" Description="未转换">
+</Event><Event ErrorLevel="0" Project="Vifir.Web" Source="Vifir.Web\Vifir.Web.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

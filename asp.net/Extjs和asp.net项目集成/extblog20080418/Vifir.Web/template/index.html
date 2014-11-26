@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="$!{blog.author}" />
+<meta name="keywords" content="$!{blog.keywords}" />
+<meta name="robots" content="index, follow, archive" />
+<meta name="copyright" content="$!{blog.author}" />
+<meta name="powered" content="VIFIR DEV Team" />
+<meta name="email" content="$!{blog.email}" />
+<meta name="generator" content="Easy JWeb With ExtJS" />
+	
+<title>vifir.com示例程序</title>
+<link rel="stylesheet" type="text/css" href="themes/silver-light/stylesheet.css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="themes/silver-light/stylesheet_iefix.css" type="text/css" media="screen"  />
+<![endif]-->
+<script type="text/javascript" src="/javascript/external.js"></script>
+<script type="text/javascript" src="/javascript/swfobject.js"></script>
+<script type="text/javascript" src="themes/silver-light/preload.js" defer="defer"></script>
+<link rel="shortcut icon" href="themes/silver-light/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+<div id="shiv"></div>
+<div id="wrap_container">
+  <div id="container">
+
+    <div id="header">
+      <div id="logo">
+        <h1>
+        <a href="/index.html">
+        	$!{blog.domain}.blog.vifir.com
+        </a></h1>
+      </div>
+      <div id="top_nav">
+        <ul id="language_ul">
+          <li id="nav_srpski"></li>
+   
+        </ul>
+        <ul id="nav_ul">
+          <li class="navs_"><a href="http://www.vifir.com/">VifirCOM</a></li>
+          <li class="navs_"><a href="/blog.ejf?blogId=$!{blog.id}">$!{blog.title}</a></li>
+          <li class="navs_"><a href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=topicList">我的文章</a></li>
+          <li class="navs_"><a href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=albumList">我的珍藏</a></li>
+        </ul>
+      </div>
+      <!-- navigation ending -->
+    </div>
+    <!-- header ending -->
+    <div id="flashcontent">
+      <div class="image">
+      <img src="themes/silver-light/images/image_home.gif" alt="VIFIR" width="880" height="280" />
+     </div>
+      <!-- image ending -->
+	    <div class="description">
+$!{blog.description}
+		</div>	  
+    </div>
+
+    <div class="content_home">
+      <div class="feature_sider">
+        <h2 id="title_feature_sider"></h2>
+        <p>
+<ul>
+$!{blog.intro}
+</ul>
+#if($categoryList.size()>0)
+<div class="blog_title">日志分类</div>
+<ul>
+#foreach( $info in $categoryList)
+	<li>
+		<div class="list">
+			<a href="http://vifir.com/entry/category/$!{info.id}.html">$!{info.name}</a>
+		</div>
+	</li>
+#end
+</ul>
+#end
+
+#if($recentPostList.size()>0)
+<div class="blog_title">最新文章</div>
+<ul>
+#foreach( $info in $recentPostList)
+	<li>
+		<div class="list">
+			<a target="_blank" rel="external" href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=topicShow&amp;id=$!{info.id}">$!{info.title}</a>
+		</div>
+	</li>
+#end
+</ul>
+#end
+
+#if($albumList.size()>0)
+<div class="blog_title">最新图片</div>
+<ul>
+#foreach( $info in $albumList)
+	<li>
+		<div class="list">
+			<a  target="_blank" rel="external" href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=albumShow&amp;id=$!{info.id}">$!{info.title}</a>
+		</div>
+	</li>
+#end
+</ul>
+#end
+
+#if($linkList.size()>0)
+<div class="blog_title">链接</div>
+<ul>
+#foreach( $info in $linkList)
+	<li>
+		<div class="list">$!{info.title}</div>
+	</li>
+#end
+</ul>
+#end
+
+#if($topicCommentList.size()>0)
+<div class="blog_title">最新文章评论</div>
+<ul>
+#foreach( $info in $topicCommentList)
+	<li>
+		<div class="list">$!{info.title}</div>
+	</li>
+#end
+</ul>
+#end
+
+#if($albumCommentList.size()>0)
+<div class="blog_title">最新相册评论</div>
+<ul>
+#foreach( $info in $albumCommentList)
+	<li>
+		<div class="list">$!{info.title}</div>
+	</li>
+#end
+</ul>
+#end
+
+
+		</p>
+      </div>
+      <!-- feature services ending -->
+      
+      
+
+<div class="main_blog">
+<div class="blog_title">最新日志</div>
+<ul>
+#foreach( $info in $list)
+	<li>
+		<div class="blog_title">$!{info.title}</div>
+		#if($!info.intro)
+		$!CommUtil.substring($!info.intro,1000)...
+		#end
+		<a target="_blank" rel="external" href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=topicShow&amp;id=$!{info.id}">阅读全文</a>
+		<br />
+		发表于：$!{CommUtil.format($info.inputTime)} $!{info.user.name} 阅读($!{info.readTimes}) |  评论($!{info.comments.size()}) | $!{info.category.name}
+	</li>
+#end
+</ul>
+
+
+<div class="blog_title">最新相册</div>
+<ul>
+#foreach( $info in $albumList)
+	<li>
+		<div class="blog_title">$!{info.title}</div>
+		<a target="_blank" rel="external" href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=albumShow&amp;id=$!{info.id}">
+			<img src="http://static1821.img.vifir.com$!{info.path}" onload="if(this.width>490){this.width=490};"  /> 
+		</a>
+		<br />
+		#if($!info.intro)
+		$!CommUtil.substring($!info.intro,1000)
+		#end
+		<br />
+		发表于：$!{CommUtil.format($info.inputTime)} $!{info.user.name} 阅读($!{info.readTimes}) |  评论($!{info.comments.size()}) | $!{info.category.name}
+	</li>
+#end
+</ul>
+
+
+</div>
+#*
+      
+      <div class="feature_services">
+        <h2 id="title_feature_work"><a href="/en/work.html">Our work - e-commerce, CMS (Joomla, Mambo), Flash</a></h2>
+        <p> 
+#foreach( $info in $list)
+#if($!info.intro)
+$!CommUtil.substring($!info.intro,1000)
+#end
+$!html.autoLink($info) <br />
+$!info.htmlUrl().substring(1) <br />
+作者：$!blogInfo.nickName
+阅读：$!info.readTimes
+发表时间：$!CommUtil.format($!info.displayTime))<br />
+#end
+          
+          </p>
+      </div>
+      <!-- feature services ending -->
+      <div class="feature_about">
+        <h2 id="title_feature_about"><a href="/aboutus.html">About us</a></h2>
+        <p> 
+#foreach( $info in $list)
+#if($!info.intro)
+$!CommUtil.substring($!info.intro,1000)
+
+#end
+$!html.autoLink($info) <br />
+$!info.htmlUrl().substring(1) <br />
+作者：$!blogInfo.nickName
+阅读：$!info.readTimes
+发表时间：$!CommUtil.format($!info.displayTime))<br />
+$!CommUtil.cnFormatDate($info.inputTime)
+#end
+       </p>
+      </div>
+      <!-- feature services ending -->
+*#
+
+
+
+
+    </div>
+    <!-- content ending -->
+    <div id="footer">
+      <p>It is proudly powered Powered by VIFIR.COM &amp; &copy; 2007-2008 $!{blog.author} 版权所有 theme by Bob</p>
+    </div>
+  </div>
+  <!-- container ending -->
+</div>
+<!-- wraper container ending -->
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DelGuestInfo.aspx.cs" Inherits="URL_GuestInfo_DelGuestInfo" %>

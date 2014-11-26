@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MyHotelManager">
+</Property><Property Name="解决方案文件" Value="C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\MyHotelManager.sln">
+</Property><Property Name="Date" Value="2014年6月25日星期三">
+</Property><Property Name="Time" Value="09:05">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MyHotelManager.sln" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\MyHotelManager.sln">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\HotelModels.csproj" Description="项目文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\HotelModels.csproj">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\OpenRoomInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\OpenRoomInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\RoomBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\RoomBean.cs">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\RoomStateBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\RoomStateBean.cs">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\RoomTypeBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\RoomTypeBean.cs">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\UserInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelModels\UserInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\HotelModels.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="HotelModels" Source="HotelModels\HotelModels.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\HotelDAL.csproj" Description="项目文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\HotelDAL.csproj">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\DBHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\DBHelper.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\IsTableDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\IsTableDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\MoneyInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\MoneyInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\OpenRoomInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\OpenRoomInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\RoomDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\RoomDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\RoomStateDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\RoomStateDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\RoomTypeDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\RoomTypeDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\UserInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelDAL\UserInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\HotelDAL.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="HotelDAL" Source="HotelDAL\HotelDAL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\HotelBLL.csproj" Description="项目文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\HotelBLL.csproj">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\IsTableBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\IsTableBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\JSONHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\JSONHelper.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\MoneyInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\MoneyInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\OpenRoomInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\OpenRoomInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\RoomBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\RoomBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\RoomStateBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\RoomStateBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\RoomTypeBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\RoomTypeBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\UserInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\MyHotelManager20080901\Backup\HotelBLL\UserInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\HotelBLL.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="HotelBLL" Source="HotelBLL\HotelBLL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MyHotelManager.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="MyHotelManager.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HotelModels" Source="HotelModels\HotelModels.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="HotelDAL" Source="HotelDAL\HotelDAL.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="HotelBLL" Source="HotelBLL\HotelBLL.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

@@ -1,0 +1,20 @@
+咨询  内容和新闻一样  里面的栏目分为  行业动态   促销信息   
+装修公司
+材料商
+企业信用档案
+人员信用档案
+
+http://m.xiaoxiangrc.com/
+
+1后台系统
+F:\code\asp.net\微网站\XxWapSystem\XxWapSystem
+2网站后台
+E:\装修网2008项目源码\装修网源码
+3发布浏览地址
+\\192.168.5.253\zw_yyfdcw_com\xxw_wap
+4界面设计地址
+\\192.168.5.253\fdcxx\test\myyfdcw
+5网站地址
+http://zx.yyfdcw.com/
+6发布浏览网站地址
+http://m.yyfdcw.com/

@@ -1,0 +1,49 @@
+ExtJs单用户Blog系统后台源码
+
+　该系统是由vifir.com推出的一个用于演示extjs在.net平台下使用的单用户Blog系统。系统后台使用.Net平台，语言为C#，技术构架为NHibernate+Spring.Net+Vifir实现，支持多种数据库，采用三层结构，数据访问层DAO、业务逻辑层及表示层完全分离。DAO层使用的泛型DAO，只需要一个DAO接口即可，不需要写具体的实现。
+
+后台具有以下功能：
+
+写新日志 分类管理 日志内容管理
+ 传照片 分类管理 照片管理 评论管理 
+用户管理 
+友情连接管理
+Blog属性设置 系统文档 该blog源码下载
+
+
+ 系统安装说明：
+　安装后，需要修改Web.config文件中的数据库配置，把用户名及密码改正确，数据库的配置内容如下：
+ <databaseSettings>
+    <add key="db.datasource" value="(local);Integrated Security=false"/>
+    <add key="db.user" value="sa"/>
+    <add key="db.password" value="sa"/>
+    <add key="db.database" value="vifirblog"/>
+    <add key="db.generateDdl" value="true"/>
+  </databaseSettings>
+  <appSettings>
+　其中db.user表示用户名，db.password表示密码，db.database表示数据库名，db.generateDdl表示是否让程序启动的时候自动生成表系统所需要的表结构。db.generateDdl默认为true，DB_51aspx下为数据库文件，附加即可。
+
+　使用说明：
+　manage将会进入登录页面，默认的系统管理员用户名及密码均为admin。
+
+作者：开源人
+注：该代码由专业的Asp.net源码下载站51aspx.com整理发布，请广大用户放心使用
+
+         	 [------------  中国站长站&51aspx联合发布----------]
+
+                                 www.CHINAZ.com
+                                 www.51aspx.com
+
+
+		╔------------------------------------------------╗
+		┆软件下载  源码下载  站长教程  免费电邮  免费主页┆
+		┆站长论坛  免费服务  虚拟主机  域名注册  免费代码┆
+		┆网站评测  人才交流  酷站赏析  业界新闻  程序发布┆
+		╚------------------------------------------------╝
+
+		      中国站长站，为您提供一切站长资讯......
+		      51aspx.com，专注于Asp.net源码下载......
+
+友情提示:
+    一般数据库文件默认在DB_51aspx文件夹下
+    如果使用VS2005打开本站项目文件，建议打开前务必安装VS2005Sp1

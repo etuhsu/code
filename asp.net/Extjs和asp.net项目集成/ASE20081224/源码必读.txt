@@ -1,0 +1,11 @@
+ResviewCRM的ExtJS页面程序
+
+该代码是ResviewCRM的前端页面程序，是通过ExtJS来表现丰富的UI界面操作，数据库中暂还没有基础数据
+
+代码展示的是  服务器管理 考勤管理 服务申请 三部分的基本功能
+
+PRO_LBR下为多层项目文件源码
+
+DB_51aspx下为Sql数据库文件，附加即可
+
+作者：Resview

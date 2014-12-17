@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/> 
+<meta name="format-detection" content="telephone=no" />
+<title>【南京二手房出售_二手房信息】_南京二手房网_365二手房网</title>
+<meta name="keywords" content="南京二手房出售，二手房出售信息"/>
+<meta name="description" content="365二手房网是南京二手房出售最大的网上交易平台,为您提供最新的南京二手房出售信息。买好房,上365二手房网"/>
+<meta name="apple-mobile-web-app-title" content="365淘房">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="http://m.house365.com/js/jquery.js?version=1.0"></script> 
+<script src="http://m.house365.com/js/common.js?version=1.0"></script>
+<link rel="stylesheet" type="text/css" href="../css/city/nj.css" /><link rel="stylesheet" type="text/css" href="../css/v2.css" />
+<link rel="canonical" href="http://m.house365.com/nj/sellhouse/" /> 
+<script type="text/javascript">
+var appdowntip=getCookie('appdowntip');
+var closetip=getCookie('closetip');
+if(navigator.cookieEnabled && appdowntip==null){
+   //document.write('<meta name="apple-itunes-app" content="app-id=543472063">');
+   //setCookie('appdowntip',true);
+}
+$(document).ready(function(){
+	var apppop=getCookie('apppop');
+	if(navigator.cookieEnabled && apppop==null){
+	    setCookie('apppop',true);
+		//$("#app_downloads").show();
+		$("#app_downloads").css("width",document.body.clientWidth);
+		$("#app_downloads").css("height",document.body.clientHeight);
+		$(".turn_off").click( function () {
+			//$("#app_downloads").hide();
+		});
+		$(".no_download").click( function () {
+			//$("#app_downloads").hide();
+		});
+	}
+	//get_location();
+  });
+</script>
+<link rel="apple-touch-icon" href="http://m.house365.com/images/apple-touch-icon.png" sizes="144x144" />
+</head>
+<body>
+<div id="app-download-bar" class="app-download-bar" style="display:none">
+<a id="btn_app_down" href="http://app.house365.com/taofang/?channel=cptfxz" target="_blank"></a><span id="closetip" class="downtxt fr">关闭</span>
+</div>
+<div id="app-open-bar" class="app-open-bar" style="display:none">
+<span class="open_close" id="app_open_close"></span>
+<span class="open_icon"></span>
+ <span class="open_alt">极速体验更省流量</span>
+ <span id="openapp" class="opentxt fr">立即打开</span>
+</div>
+
+ <!--提示下载-->
+<div id="app_downloads" style="display:none">
+	<div id="app_download_popup">
+	    <div class="link_btn">
+		<a class="turn_off" href="javascript:hideid('app_download_popup')"></a>
+		<a class="no_download" href="javascript:hideid('app_download_popup')">暂不下载</a>
+		<a class="yes_download" href="http://app.house365.com/taofang/?channel=cptfxz">立刻下载</a>  
+	    </div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="../css/v2.css">
+<!--头部LOGO-->
+<header class="m_wrap">
+<section id="topbar" class="topnav_tool">
+<button class="top_btn" id="btn_back">返回</button>
+<h1>二手房</h1>
+<button class="top_btn_fav">导航</button>
+</section>
+</header>
+<div id="topnav_menu" class="topnav_menu" style="display:none">
+  <ul>
+	<li  id="topnav_menu_index"><a href="http://m.house365.com/nj.html" target="_self">首页</a><s class="nav_gap"></s></li>
+	<li  id="topnav_menu_newhouse"><a href="http://m.house365.com/nj/newhouse/" target="_self">新房</a><s class="nav_gap"></s></li>
+	<li id="topnav_menu_sellhouse"><a href="http://m.house365.com/nj/sellhouse/" target="_self">二手房</a><s class="nav_gap"></s></li> 
+	<li id="topnav_menu_renthouse"><a href="http://m.house365.com/nj/renthouse/" target="_self">租房</a><s class="nav_gap"></s></li>
+	<li id="topnav_menu_news"><a href="http://m.house365.com/nj/news/">资讯</a><s class="nav_gap"></s></li>   
+	<li id="topnav_menu_bbs"><a href="http://m.house365.com/nj/bbs/" target="_self">社区</a></li>  
+	<li id="topnav_menu_tlf"><a href="http://m.house365.com/?app=event&type=tlf">团购</a><s class="nav_gap"></s></li>
+	<li id="topnav_menu_coupon"><a href="http://m.house365.com/?app=event&type=coupon">优惠</a><s class="nav_gap"></s></li> 
+	<li id="topnav_menu_event"><a href="http://m.house365.com/?app=event&type=event">看房</a></li>
+</ul>
+<span class="topnav_contract"><i class="icon-up"></i></span>
+</div>
+<script>
+var choose_opts= new Map();
+var choose_opt_labels=new Array();
+
+function submitsearch(){
+    var jumpurl = "http://m.house365.com/nj/sellhouse/i_x_m_d_j_b_k" + encodeURIComponent(jQuery("#searchInput").val())+"/";
+	document.location.href = jumpurl;
+}
+</script>
+<!--搜索区域-->
+<div class="search_wrap"> 
+	<div id="sugglist"></div>
+      <form method="get" id="search_form" name="search_form" action="http://m.house365.com/?app=sellhouse">
+        <div class="search-input">
+        <input type="hidden" name="app" value="sellhouse"/>
+        <label for="searchInput" class="forSearchInput2"></label>
+	    <input type="hidden" name="infofrom" value=""/>
+	    <input type="hidden" name="infotype" value=""/>
+	    <input type="hidden" name="buildarea" value=""/>
+	    <input type="hidden" name="district" value=""/>
+	    <input type="hidden" name="price" value=""/> 
+        <input type="text" class="textInput" name="keyword"  value=""  id="searchInput" placeholder="请输入房源/小区关键字"  autocomplete="off"/>
+	    <input type="bottom" class="search-submit right" onclick="submitsearch()" vlaue="搜索"/>
+        </div>
+          
+      </form>
+</div>
+ 
+<!--已选择条件-->
+<div class="choose_selected">
+<span class="choose_sel_label">已选条件：</span>
+<ul id="choose_selected_list"> 
+</ul>
+</div>
+
+
+<!--筛选区域-->
+<h2 class="h2_tabtitle"><span class="cur_title_font">筛选楼盘</span></h2>
+<div class="choose_opt">
+<!--新的筛选条件start-->
+<dl>
+  <dt>来源</a></dt>
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+  	 
+ 	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/sellhouse/i0_x_m_d_j_b_k/">任意</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i1_x_m_d_j_b_k/">个人</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i2_x_m_d_j_b_k/">中介</a></dd>
+	 
+  </div>
+</dl>
+<dl>
+  <dt>类型</a></dt>
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+  	 
+ 	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/sellhouse/i_x0_d_j_b_k/">任意</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x1_d_j_b_k/">住宅</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x2_d_j_b_k/">别墅</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x3_d_j_b_k/">写字楼</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x4_d_j_b_k/">商铺</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x5_d_j_b_k/">厂房仓库车库</a></dd>
+	 
+  </div>
+</dl>
+
+<dl>  
+  <dt>售价</dt>
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j0_b_k/">任意</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j1_b_k/">40万以下</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j2_b_k/">40-60万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j3_b_k/">60-90万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j4_b_k/">90-120万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j5_b_k/">120-150万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j6_b_k/">150-200万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j7_b_k/">200-300万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j8_b_k/">300-500万</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d_j9_b_k/">500万以上</a></dd>
+  </div>
+</dl>
+<dl>  
+  <dt>面积</dt> 
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/sellhouse/i_x_m0_d_j_b_k/">任意</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m1_d_j_b_k/">40平米以下</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m2_d_j_b_k/">40-60平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m3_d_j_b_k/">60-80平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m4_d_j_b_k/">80-100平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m5_d_j_b_k/">100-120平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m6_d_j_b_k/">120-140平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m7_d_j_b_k/">140-200平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m8_d_j_b_k/">200-400平米</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m9_d_j_b_k/">400平米以上</a></dd>
+  </div>
+</dl>
+<dl>  
+  <dt>城区</dt>
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/sellhouse/i_x_m_d0_j_b_k/">任意</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d1_j_b_k/">玄武区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d2_j_b_k/">鼓楼区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d3_j_b_k/">白下区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d4_j_b_k/">建邺区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d5_j_b_k/">秦淮区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d6_j_b_k/">下关区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d7_j_b_k/">雨花台区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d8_j_b_k/">栖霞区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d9_j_b_k/">江宁区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d10_j_b_k/">浦口区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d11_j_b_k/">六合区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d12_j_b_k/">大厂区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d13_j_b_k/">溧水区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d14_j_b_k/">高淳区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/sellhouse/i_x_m_d15_j_b_k/">其它</a></dd>
+	 
+  </div>
+</dl>
+
+<!--新的筛选条件end -->
+</div> 
+
+
+<div class="choose_more">更多筛选条件<i class="icon-down"></i></div>
+<!--数据-->
+<h2 class="h2_tabtitle"><span class="cur_title_count"><i class="bhline"></i>出售房源</span>
+</h2>
+<div id="datalist">
+<div class="tplist">
+<ul>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48156135.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48156135.html">
+		                <img width="50" height="50" alt="【我爱我家 全优房源】刚需首选卧室双南满5年戴家巷房改三室" src="http://img17.house365.com/njhouse/2014/08/28/thumb/140923182653ff2bd201f8c.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48156135.html">【我爱我家 全优房源】刚需首选卧室双南满5年戴家巷房改三室</a></div>
+          <div class="s-addr">港口小区</div>
+          <div class="s-addr">3室1厅 89平米</div>
+          <div class="s-price">150万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48156102.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48156102.html">
+		                <img width="50" height="50" alt="【我爱我家 全优房源】三牌楼商圈稀缺3房 精装无税总价低" src="http://img13.house365.com/njhouse/2014/08/29/thumb/140927996053ffe7d80e98e.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48156102.html">【我爱我家 全优房源】三牌楼商圈稀缺3房 精装无税总价低</a></div>
+          <div class="s-addr">新门口小区</div>
+          <div class="s-addr">3室1厅 86平米</div>
+          <div class="s-price">165万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48156147.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48156147.html">
+		                <img width="50" height="50" alt="【我爱我家 全优房源】南师附小树人双学区精装修双南全明采光好" src="http://img19.house365.com/njhouse/2014/08/29/thumb/140928337753fff53117911.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48156147.html">【我爱我家 全优房源】南师附小树人双学区精装修双南全明采光好</a></div>
+          <div class="s-addr">新河一村</div>
+          <div class="s-addr">2室1厅 58平米</div>
+          <div class="s-price">150万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/46652034.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/46652034.html">
+		                <img width="50" height="50" alt="【我爱我家 全优房源】五老村本部 单价最低学区房 满五年" src="http://img26.house365.com/njhouse/2014/07/30/thumb/140668540053d850d8738de.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/46652034.html">【我爱我家 全优房源】五老村本部 单价最低学区房 满五年</a></div>
+          <div class="s-addr">东白菜园小区</div>
+          <div class="s-addr">1室1厅 38平米</div>
+          <div class="s-price">96万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/47913147.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/47913147.html">
+		                <img width="50" height="50" alt="【顺驰真优房】孝陵卫地铁口 佳诚花园 满五年 黄金三楼全明户型" src="http://img14.house365.com/njhouse/2014/08/30/thumb/14093983205401b630ce9cd.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/47913147.html">【顺驰真优房】孝陵卫地铁口 佳诚花园 满五年 黄金三楼全明户型</a></div>
+          <div class="s-addr">佳诚花园</div>
+          <div class="s-addr">3室2厅 97平米</div>
+          <div class="s-price">195万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48269925.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48269925.html">
+		                <img width="50" height="50" alt="【顺驰真优房】孝陵卫地铁口 罗汉巷 满五年无税 双南 独家好房" src="http://img21.house365.com/njhouse/2014/09/07/thumb/1410091291540c491b1f439.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48269925.html">【顺驰真优房】孝陵卫地铁口 罗汉巷 满五年无税 双南 独家好房</a></div>
+          <div class="s-addr">罗汉巷小区</div>
+          <div class="s-addr">2室1厅 57平米</div>
+          <div class="s-price">85万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/47671425.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/47671425.html">
+		                <img width="50" height="50" alt="【我爱我家 全优房源】长发cfc 黄金楼层急售" src="http://img17.house365.com/njhouse/2014/08/25/thumb/140893661853faaaaa51d73.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/47671425.html">【我爱我家 全优房源】长发cfc 黄金楼层急售</a></div>
+          <div class="s-addr">CFC长发中心</div>
+          <div class="s-addr">3室2厅 76平米</div>
+          <div class="s-price">235万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48252067.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48252067.html">
+		                <img width="50" height="50" alt="满五年精装 两证齐全 黄金楼层 生活设施齐全 免除装修的烦恼" src="http://img27.house365.com/njhouse/2014/09/07/thumb/1410070304540bf720a4785.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48252067.html">满五年精装 两证齐全 黄金楼层 生活设施齐全 免除装修的烦恼</a></div>
+          <div class="s-addr">明发滨江新城</div>
+          <div class="s-addr">2室2厅 87平米</div>
+          <div class="s-price">89万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48237134.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48237134.html">
+		                <img width="50" height="50" alt="精装三房 南北通透 黄金楼层 两证齐全 房主诚心卖 满五年" src="http://img13.house365.com/njhouse/2014/09/07/thumb/1410052066540bafe2ead8c.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48237134.html">精装三房 南北通透 黄金楼层 两证齐全 房主诚心卖 满五年</a></div>
+          <div class="s-addr">旭日上城</div>
+          <div class="s-addr">3室2厅 99平米</div>
+          <div class="s-price">115万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/47398675.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/47398675.html">
+		                <img width="50" height="50" alt="【顺驰真优房】农科院 满五年 双南 全明 稀缺秒杀好房" src="http://img18.house365.com/njhouse/2014/08/18/thumb/140835820453f1d73c900b9.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/47398675.html">【顺驰真优房】农科院 满五年 双南 全明 稀缺秒杀好房</a></div>
+          <div class="s-addr">农科院</div>
+          <div class="s-addr">2室1厅 51平米</div>
+          <div class="s-price">95万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48322936.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48322936.html">
+		                <img width="50" height="50" alt="格局方正 全明通透 精装 拎包即住 送设施 房主诚心卖 价格可以谈" src="http://img14.house365.com/njhouse/2014/09/09/thumb/1410258313540ed58911c38.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48322936.html">格局方正 全明通透 精装 拎包即住 送设施 房主诚心卖 价格可以谈</a></div>
+          <div class="s-addr">旭日上城</div>
+          <div class="s-addr">2室2厅 91平米</div>
+          <div class="s-price">123万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48131847.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48131847.html">
+		                <img width="50" height="50" alt="【顺驰真优房】孝陵卫地铁口 双拜巷教师公寓 无税 超值单价 急售" src="http://img13.house365.com/njhouse/2014/09/04/thumb/1409827501540842ad15041.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48131847.html">【顺驰真优房】孝陵卫地铁口 双拜巷教师公寓 无税 超值单价 急售</a></div>
+          <div class="s-addr">双拜巷教师公寓</div>
+          <div class="s-addr">2室1厅 75平米</div>
+          <div class="s-price">128万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/47005540.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/47005540.html">
+		                <img width="50" height="50" alt="【我爱我家 全优房源】大光路中和桥路 小区中间超低价急售" src="http://img24.house365.com/njhouse/2014/08/08/thumb/140748054653e472e2a3c2e.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/47005540.html">【我爱我家 全优房源】大光路中和桥路 小区中间超低价急售</a></div>
+          <div class="s-addr">御水湾花园</div>
+          <div class="s-addr">3室2厅 121平米</div>
+          <div class="s-price">278万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/47518556.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/47518556.html">
+		                <img width="50" height="50" alt="【顺驰真优房】下马坊地铁口 铁匠营 稀缺朝南单室套 无税 秒杀" src="http://img17.house365.com/njhouse/2014/08/21/thumb/140861856553f5d045c94b7.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/47518556.html">【顺驰真优房】下马坊地铁口 铁匠营 稀缺朝南单室套 无税 秒杀</a></div>
+          <div class="s-addr">铁匠营小区</div>
+          <div class="s-addr">1室1厅 40平米</div>
+          <div class="s-price">75万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48325018.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48325018.html">
+		                <img width="50" height="50" alt="紧邻地铁口 小房子大风景 黄金楼层 户型全明 格局方正 双南型" src="http://img29.house365.com/njhouse/2014/09/09/thumb/1410261047540ee037ad0cd.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48325018.html">紧邻地铁口 小房子大风景 黄金楼层 户型全明 格局方正 双南型</a></div>
+          <div class="s-addr">威尼斯水城</div>
+          <div class="s-addr">2室2厅 88平米</div>
+          <div class="s-price">98万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48131194.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48131194.html">
+		                <img width="50" height="50" alt="【顺驰真优房】下马坊地铁口 小卫街 满五年 双南 全明 诚心急售" src="http://img29.house365.com/njhouse/2014/09/04/thumb/140982664754083f5709d9f.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48131194.html">【顺驰真优房】下马坊地铁口 小卫街 满五年 双南 全明 诚心急售</a></div>
+          <div class="s-addr">小卫街226号</div>
+          <div class="s-addr">2室1厅 66平米</div>
+          <div class="s-price">140万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48327254.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48327254.html">
+		                <img width="50" height="50" alt="【顺驰真优房】农科院 满五年 双南一北 稀缺小三房 超值低价" src="http://img22.house365.com/njhouse/2014/09/09/thumb/1410263304540ee9085d4f6.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48327254.html">【顺驰真优房】农科院 满五年 双南一北 稀缺小三房 超值低价</a></div>
+          <div class="s-addr">农科院</div>
+          <div class="s-addr">3室1厅 67平米</div>
+          <div class="s-price">110万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/46780354.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/46780354.html">
+		                <img width="50" height="50" alt="【我爱我家全优房源】万达紫金明珠 70年产权单身公寓 共20套房源" src="http://img27.house365.com/njhouse/2014/08/02/thumb/140695095553dc5e2b8fe94.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/46780354.html">【我爱我家全优房源】万达紫金明珠 70年产权单身公寓 共20套房源</a></div>
+          <div class="s-addr">万达紫金明珠</div>
+          <div class="s-addr">1室1厅 44平米</div>
+          <div class="s-price">73万</div>
+
+        </div>    </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/48146731.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/48146731.html">
+		                <img width="50" height="50" alt="金陵尚府楼王户型超好 双南一北 阳光超好 等待有缘人超级稀缺" src="http://img12.house365.com/njhouse/2014/09/03/thumb/140975207354071c09e917c.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/48146731.html">金陵尚府楼王户型超好 双南一北 阳光超好 等待有缘人超级稀缺</a></div>
+          <div class="s-addr">金陵尚府</div>
+          <div class="s-addr">3室2厅 143平米</div>
+          <div class="s-price">387万</div>
+
+        </div>    <div class="s-tag ctag_label_r">急售</div>
+      </li>
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/sellhouse/46127522.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/sellhouse/46127522.html">
+		                <img width="50" height="50" alt="【顺驰真优房】孝陵卫地铁口 中建八局 满五年 双南一北 全明" src="http://img14.house365.com/njhouse/2014/07/15/thumb/140541906553c4fe3917c04.jpg"/>
+
+		              </a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/sellhouse/46127522.html">【顺驰真优房】孝陵卫地铁口 中建八局 满五年 双南一北 全明</a></div>
+          <div class="s-addr">双拜巷100号</div>
+          <div class="s-addr">3室2厅 105平米</div>
+          <div class="s-price">138万</div>
+
+        </div>    </li>
+</ul>
+</div>
+
+  
+</div>
+<script type="text/javascript">
+var page=2;
+var url = "http://m.house365.com/index.php?city=nj&app=sellhouse";
+
+$(document).ready(function() {
+
+
+//新加的
+var is_topnav_show=false;
+$(".top_btn_fav").click(function(){
+	if(is_topnav_show){
+		$("#topnav_menu").slideUp();
+		is_topnav_show=false;
+	}else{
+		$("#topnav_menu").slideDown();
+		is_topnav_show=true;
+	}
+});
+$(".topnav_contract").click(function(){
+$("#topnav_menu").slideUp();
+		is_topnav_show=false;
+});
+	$(".choose_opt dl").addClass('choose_line');
+	$(".choose_switch").click(function(){
+		//alert($(this).parent().html());
+		$(this).parent().toggleClass('choose_line');
+		//alert($(this).find("i").hasClass("icon-on"));
+		if($(this).find("i").hasClass("icon-on")){
+			$(this).find("i").removeClass('icon-on');
+			$(this).find("i").toggleClass('icon-off');
+		}else{
+			$(this).find("i").removeClass('icon-off');
+			$(this).find("i").toggleClass('icon-on')
+		}
+	});
+
+	//更多筛选
+	var choose_more=false;
+	var more_choose_up_html ='更多筛选条件<i class="icon-down"></i>';
+	var more_choose_down_html ='精简筛选条件<i class="icon-up"></i>';
+	$(".choose_opt dl:gt(1)").hide(); 
+	$(".choose_more").click(function(){
+		 if(choose_more){ 
+			$(".choose_opt dl:gt(1)").hide();
+			$(this).html(more_choose_up_html);
+			choose_more=false;
+		 }else{ 
+			$(".choose_opt dl:gt(1)").show();
+			$(this).html(more_choose_down_html);
+			choose_more=true;
+		}
+	});
+//已选条件  
+var choose_selected_list_html="";
+if(choose_opts.size()>0){
+for(var i=0;i<choose_opts.size();i++){
+choose_selected_list_html+="<li><label>"+choose_opt_labels[choose_opts.element(i).key]+":</label>"+choose_opts.element(i).value+"</li>";
+}
+$("#choose_selected_list").html(choose_selected_list_html);
+}else{
+$(".choose_selected").hide();
+}
+
+//初始化排序选择
+//initOrderParam();
+//新加end
+
+    var moreitem ='<div class="more_tag">点击加载更多</div>';
+     var nodataitem='<div class="nodata_tag">很抱歉,没有找到相关楼盘信息！</div>';
+
+    	$("#datalist").append(moreitem);
+    
+     $(".more_tag").click(function(){
+        $(".more_tag").hide();
+        $("#datalist").append('<div class="page_loading"></div>');
+            $.ajax({
+            type: "GET",
+            url: url,
+            data: "page="+page,
+            success: function(msg){
+
+                $(".page_loading").remove();
+                if(msg!=''){
+                    page=page+1;
+                    $("#datalist ul").append(msg);
+                    //$("#datalist").append(moreitem);
+                    $(".more_tag").show();
+                }else{
+                   $(".more_tag").hide();
+                   $("#datalist").append('<div class="nodata_tag">没有更多数据了</div>');  
+                }
+            }
+            });
+    });
+
+    $("#datalist li:even").addClass("bg2");
+
+
+    //搜索联想
+    $("#searchInput").keyup(function(){
+	var thinkurl = "http://m.house365.com/index.php?app=sellhouse&act=think&city=nj";
+	var searchInput = $("#searchInput").val();
+	if(searchInput.length>=2){
+	$("#sugglist").html('<img src="images/loading.gif"/>');
+	$("#sugglist").show();
+	$.ajax({
+            type: "GET",
+            url: thinkurl,
+	    dataType:'json',
+            data: "keyword="+$.trim(searchInput),
+            success: function(data){ 
+		//$(".search_wrap").append('');
+		var sugglisthtml='<ul>';
+		$.each(data, function(i, n){
+			sugglisthtml+="<li bid=\""+n.id+"\">"+n.name+"</li>";
+		});
+		sugglisthtml+='</ul>';
+		if(data.length==0){
+			$("#sugglist").hide();	
+		} 
+		$("#sugglist").html(sugglisthtml);
+		//$("#sugglist").show();
+            }
+            });
+	}else{
+	  $("#sugglist").hide();
+	}
+
+	});
+
+	$('#sugglist li').live('click', function() { 
+		go_sellhouse_block_url($(this).attr("bid"));
+		$("#sugglist").hide();
+	});
+
+});
+</script>
+<p></p>
+
+<!--底部导航-->
+<nav class="footernav">
+<ul>
+<li id="footernav_newhouse"><a href="http://m.house365.com/nj/newhouse/" target="_self">新房</a></li>
+<li id="footernav_sellhouse"><a href="http://m.house365.com/nj/sellhouse/" target="_self">二手房</a></li> 
+<li id="footernav_renthouse"><a href="http://m.house365.com/nj/renthouse/" target="_self">租房</a></li>  
+<!--<li><a href="#">家居</a></li>-->
+<li id="footernav_news"><a href="http://m.house365.com/nj/news/">资讯</a></li> 
+<li id="footnav_bbs"><a href="http://m.house365.com/nj/bbs/" target="_self">社区</a></li> 
+</ul>
+</nav>
+<div class="footer">
+    <div class="footer_link"><a href="http://wap.house365.com/secondhouse" class="agray">标准版</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="agray" style="color: #507FBD;">触屏版</a>&nbsp;&nbsp;<a href="http://nj.sell.house365.com/?refrom=touch" class="agray">电脑版</a>&nbsp;&nbsp;<a href="http://app.house365.com/m" class="agray">客户端</a></div>   
+  <div class="f12 fgray" align="center">Copyright &copy; 2013 365地产家居网<br/>m.house365.com 苏ICP证B2-20110162号</div>
+</div>
+
+
+<div class="btn_gotop" id="btn_gotop" style="display:none"></div> 
+<div class="none">
+<img src="http://stat.house365.com/wap_365count.php?website=303" width="0"/>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(["_setAllowHash", true]);
+_gaq.push(["_setAllowAnchor", true]); 
+_gaq.push(["_addOrganic", "baidu", "wd"]);
+_gaq.push(["_addOrganic", "baidu", "word"]);
+_gaq.push(["_addOrganic", "google", "q"]);
+_gaq.push(["_addOrganic", "118114", "kw"]);
+_gaq.push(["_addOrganic", "bing", "q"]);
+_gaq.push(["_addOrganic", "soso", "w"]);
+_gaq.push(["_addOrganic", "youdao", "q"]);
+_gaq.push(["_addOrganic", "sogou", "query"]);
+_gaq.push(["_addOrganic", "so", "q"]);
+_gaq.push(["_setDomainName", "house365.com"]);
+_gaq.push(["_setAccount", "UA-42083344-1"]);
+_gaq.push(["_trackPageview", "南京/二手房 -url:http://m.house365.com/nj/sellhouse/"]);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+

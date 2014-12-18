@@ -1,0 +1,74 @@
+@charset "utf-8";
+html{color:#000;background:#FFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+input,select{vertical-align:middle;}
+body{
+	font-family: arial, helvetica, clean, sans-serif;
+	font-size: 12px;
+	line-height: 2;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+}
+select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}
+table{font-size:inherit;font:100%; border-collapse:collapse;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+.txtboxcs{ border:solid 1px #ccc; height:22px;}
+
+/*title*/
+h1 { font-size:32px;}
+h2 { font-size:26px;}
+h3 { font-size:20px;}
+h4 { font-size:14px;}
+h5 { font-size:12px;}
+h6 { font-size:10px;}
+
+
+/* -- ��߾� -- */
+.m1 { margin:1px; }
+.m2 { margin:2px; }
+.m5 { margin:5px; }
+.m10 { margin:10px; }
+.mt2 { margin-top:2px;}
+.mt5 { margin-top:5px;}
+.mt8 { margin-top:8px;}
+.mt10 { margin-top:10px;}
+.mt12 { margin-top:12px;}
+.mt15 { margin-top:15px;}
+.mt20 { margin-top:20px;}
+.mt30 { margin-top:30px;}
+.mr5 { margin-right:5px;}
+.mr10 { margin-right:10px;}
+.mr12 { margin-right:12px;}
+.ml5 { margin-left:5px; }
+.ml7 { margin-left:7px; }
+.mb10 { margin-bottom:10px;}
+.ml12 { margin-left:12px; }
+.ml10 { margin-left:10px; }
+.ml20 { margin-left:20px; }
+
+/*�����������µ�*/
+.userorder{ width:700px;}
+.userorder tr{height:25px;}
+.userorder tr span{color:#f00;padding-left:4px;}
+
+.stf  { border:1px solid #ccc;  padding-left:140px ; padding-top:10px; padding-bottom:20px}
+.stf span{ color:#000; font-size:14px; line-height:30px ; font-weight:bold}
+.stf dd{ line-height:24px ;   font-size:14px }
+.stf p{ line-height:24px ;   font-size:14px }
+ 

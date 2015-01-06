@@ -1,18 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ZfbJk", "F:\wei_wan_zhan\ZfbJk", "{4C93C8CE-CBD4-41CA-9AD7-CDE9166D8FB2}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ZfbJk", "F:\code\asp.net\ZfbJk", "{4C93C8CE-CBD4-41CA-9AD7-CDE9166D8FB2}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFramework = "3.5"
 		Debug.AspNetCompiler.VirtualPath = "/ZfbJk"
-		Debug.AspNetCompiler.PhysicalPath = "F:\wei_wan_zhan\ZfbJk"
+		Debug.AspNetCompiler.PhysicalPath = "F:\code\asp.net\ZfbJk"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ZfbJk\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/ZfbJk"
-		Release.AspNetCompiler.PhysicalPath = "F:\wei_wan_zhan\ZfbJk"
+		Release.AspNetCompiler.PhysicalPath = "F:\code\asp.net\ZfbJk"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ZfbJk\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"

@@ -3,11 +3,11 @@
  * 广告编辑
  *
  * @version        $Id: ad_edit.php 1 8:26 2010年7月12日Z tianya $
- * @package        DedeCMS.Administrator
+ * @package        028jwz.Administrator
  * @copyright      Copyright (c) 2007 - 2010, DesDev, Inc.
- * @license        http://help.dedecms.com/usersguide/license.html
- * @link           http://www.dedecms.com
- */
+ * @license        http://help.028jwz.com/usersguide/license.html
+ * @link           http://www.028jwz.com
+ */ 
 require(dirname(__FILE__)."/config.php");
 CheckPurview('plus_广告管理');
 require_once(DEDEINC.'/typelink.class.php');
@@ -55,6 +55,9 @@ else if($dopost=='saveedit')
 {
     $starttime = GetMkTime($starttime);
     $endtime = GetMkTime($endtime);
+	if($img=="qyuefimg"){
+	$normbody = "<a href=\"{$piclink}\" id=\"qyuef\"><img src=\"{$pic}\"  border=\"0\" /></a>";
+	}
     $query = "UPDATE `#@__myad`
      SET
      clsid='$clsid',

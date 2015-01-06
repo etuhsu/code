@@ -1,15 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $cfg_soft_lang; ?>">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>更改广告</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/calendar/calendar.js"></script>
+<script language="javascript" src="../include/js/dedeajax2.js"></script>
+<script language='javascript' src="js/main.js"></script>
 </head>
 <body background="images/allbg.gif" leftmargin='8' topmargin='8'>
 <table width="98%" border="0" align="center" cellpadding="3" cellspacing="1" bgcolor="#D6D6D6">
   <tr>
-    <td height="28" background="images/tbg.gif" style="padding-left:10px;">&nbsp;<b><a href="ad_main.php"><u>广告管理</u></a></b> &gt;&gt; 更改广告 </td>
+    <td height="28" background="images/tbg.gif" style="padding-left:10px;">&nbsp;<b><a href="ad_main.php"><u>广告管理</u></a></b> &gt;&gt; 更改广告 </td> 
   </tr>
   <tr>
     <td height="200" bgcolor="#FFFFFF" valign="top"><table width="100%" border="0" cellspacing="4" cellpadding="4">
@@ -76,12 +78,42 @@
           </tr>
           <tr>
             <td height="80" align="center">正常显示内容：</td>
-            <td width="76%"><textarea name="normbody" rows="10" id="normbody" style="width:80%;height:100"><?php echo htmlspecialchars(stripslashes($row['normbody']))?></textarea></td>
-            <td width="9%">&nbsp;</td>
+            <td width="76%">
+            <?php
+            
+            if(strstr($row['normbody'],'id="qyuef"'))
+            {
+            $pat = '/<a[^>]*?\s*href=\"(.*?)\"(.*?)>(.*?)<\/a>/i';
+            preg_match_all($pat,$row['normbody'], $m);
+            $piclink=$m[1][0];
+            $pic=$m[3][0];
+            $pattern="/<[img|IMG].*?src=[\'|\"](.*?(?:[\.gif|\.jpg]))[\'|\"].*?[\/]?>/"; 
+            preg_match_all($pattern,$pic,$match); 
+            $qyuefpic=$match[1][0]
+            ?>
+            <input type="hidden" size="40" name="img" id="img" value="qyuefimg" class='iptxt'/>
+            <input type="text" size="40" name="pic" id="pic" value="<?php echo $qyuefpic?>" class='iptxt'/>
+          <input type="button" name="Submit" value="浏览..." style="width:70px" onClick="SelectImage('form1.pic','');"></span>
+          <tr>
+            <td height="80" align="center">图片链接：</td>
+            <td><input type="text" size="40" name="piclink" id="piclink" value="<?php echo $piclink?>" class='iptxt'/></td>
+            <td>&nbsp;</td>
           </tr>
+            <?php
+            }else{
+            
+           ?>
+            <textarea name="normbody" rows="10" id="normbody" style="width:80%;height:100"><?php echo $row['normbody']?></textarea>
+            <?php
+            }
+          
+            ?>
+           
+          
+          
           <tr>
             <td height="80" align="center">过期显示内容：</td>
-            <td><textarea name="expbody" rows="10" id="expbody" style="width:80%;height:100"><?php echo htmlspecialchars($row['expbody'])?></textarea></td>
+            <td><textarea name="expbody" rows="10" id="expbody" style="width:80%;height:100"><?php echo $row['expbody']?></textarea></td>
             <td>&nbsp;</td>
           </tr>
           <tr>

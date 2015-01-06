@@ -1,0 +1,84 @@
+◆备 注：
+A.该插件仅供大家研究学习，切勿于任何商业用途，请尊重作者购买正版！
+B.请在下载后24小时内将其删除，开源插件网http://www.17cha8.cn不承担由此而带来的任何法律纠纷！
+C.该插件版权归原作者。
+
+
+DEDE5.5招聘模板
+
+
+<channel:id>18</channel:id> 
+<channel:nid>zhaopin</channel:nid> 
+<channel:typename>招聘</channel:typename> 
+<channel:maintable>#@__archives</channel:maintable> 
+<channel:addtable>#@__zhaopin</channel:addtable> 
+<channel:addcon>archives_add.php</channel:addcon> 
+<channel:mancon>content_list.php</channel:mancon> 
+<channel:editcon>archives_edit.php</channel:editcon> 
+<channel:useraddcon>archives_add.php</channel:useraddcon> 
+<channel:usermancon>content_list.php</channel:usermancon> 
+<channel:usereditcon>archives_edit.php</channel:usereditcon> 
+<channel:fieldset> 
+
+<field:gzjy itemname="工作经验" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:gzjy> 
+
+<field:zprq itemname="招聘日期" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:zprq> 
+
+<field:zwlx itemname="职位类型" autofield="1" notsend="0" type="checkbox" isnull="true" islist="0" default="全职,临时工,小时工" maxlength="250" page=""> 
+</field:zwlx> 
+
+<field:zprs itemname="招聘人数" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:zprs> 
+
+<field:xbyq itemname="性别要求" autofield="1" notsend="0" type="radio" isnull="true" islist="0" default="男,女" maxlength="250" page=""> 
+</field:xbyq> 
+
+<field:nlyq itemname="年龄要求" autofield="1" notsend="0" type="select" isnull="true" islist="0" default="18岁 － 25岁,25岁 － 32岁,32岁 － 45岁" maxlength="250" page=""> 
+</field:nlyq> 
+
+<field:gzdq itemname="工作地区" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:gzdq> 
+
+<field:xzdy itemname="薪资待遇" autofield="1" notsend="0" type="checkbox" isnull="true" islist="0" default="月薪:1000－2000RMB,月薪:2000－3000RMB,月薪:3000－4000RMB,\包吃,\包住,\不包吃,\不包住" maxlength="250" page=""> 
+</field:xzdy> 
+
+
+<field:xlyq itemname="学历要求" autofield="1" notsend="0" type="checkbox" isnull="true" islist="0" default="不限文凭,初中以上,高中以上,中专以上,大学文凭,大专文凭" maxlength="250" page=""> 
+</field:xlyq> 
+
+<field:lxr itemname="联 系 人" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:lxr> 
+
+<field:lxdh itemname="联系电话" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:lxdh> 
+
+<field:eml itemname="E-Mail" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:eml> 
+
+<field:cz itemname="传　　真" autofield="1" notsend="0" type="text" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:cz> 
+
+<field:msdz itemname="面试地址" autofield="1" notsend="0" type="multitext" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:msdz> 
+
+
+<field:jtyq itemname="具体要求" autofield="1" notsend="0" type="htmltext" isnull="true" islist="0" default="" maxlength="250" page=""> 
+</field:jtyq> 
+
+</channel:fieldset> 
+<channel:listfields></channel:listfields> 
+<channel:allfields></channel:allfields> 
+<channel:issystem>0</channel:issystem> 
+<channel:isshow>1</channel:isshow> 
+<channel:issend>1</channel:issend> 
+<channel:arcsta>0</channel:arcsta> 
+<channel:usertype></channel:usertype> 
+<channel:sendrank>10</channel:sendrank> 
+<channel:isdefault>0</channel:isdefault> 
+<channel:needdes>1</channel:needdes> 
+<channel:needpic>1</channel:needpic> 
+<channel:titlename>标题</channel:titlename> 
+<channel:onlyone>1</channel:onlyone> 
+<channel:dfcid>0</channel:dfcid> 

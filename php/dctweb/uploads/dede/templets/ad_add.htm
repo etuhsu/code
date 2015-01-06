@@ -5,10 +5,12 @@
 <title>增加广告</title>
 <link href="css/base.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/calendar/calendar.js"></script>
+<script language="javascript" src="../include/js/dedeajax2.js"></script>
+<script language='javascript' src="js/main.js"></script>
 <script src="../include/js/jquery/jquery.js" language="javascript" type="text/javascript"></script>
 <script language="javascript">
 function checkSubmit()
-{
+{ 
 	if(document.form1.tagname.value=="")
 	{
 		alert("广告标识不能为空！");
@@ -180,7 +182,11 @@ function checkSubmit()
       <table width="80%" cellpadding=3 cellspacing=1 class='i_table'>
         <tr>
           <td class="b" width="30%"><b>图片地址*</b></td>
-          <td class="b"><input type="text" size="40" name="normbody[url]" value="" class='iptxt'/></td>
+          <td class="b">
+          <input type="text" size="40" name="pic" id="pic" value="" class='iptxt'/>
+          <input type="button" name="Submit" value="浏览..." style="width:70px" onClick="SelectImage('form1.pic','');"></span>
+                  
+          </td>
         </tr>
         <tr>
           <td class="b"><b>图片链接*</b></td>

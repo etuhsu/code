@@ -7,6 +7,8 @@
 <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
 <link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
 <link href="{dede:global.cfg_templets_skin/}/style/picture.css" rel="stylesheet" type="text/css" />
+<link href="style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="style/picture.css" rel="stylesheet" type="text/css" />
 <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
 <script language="javascript" type="text/javascript">
 <!--
@@ -195,7 +197,7 @@ function getDigg(aid)
              {dede:field name='imgurls' alt='图片输出区'}
                 [field:pagestyle runphp='yes'] @me= (@me==3 ? '<li>' : '');[/field:pagestyle]
                 <a href='[field:linkurl/]' [field:pagestyle runphp='yes'] @me= (@me==3 ? 'class="pic"' : ''); [/field:pagestyle]>
-                  <img src='[field:imgsrc/]' id='bigimg' [field:imgwidth /] alt='[field:alttext /]' border='0' />
+                  <img src='[field:imgsrc/]' width="240" height="180" id='bigimg' [field:imgwidth /] alt='[field:alttext /]' border='0' />
                 </a>
                 <a href='[field:linkurl/]' [field:pagestyle runphp='yes']@me = (@me==3 ? 'class="title"' : '');[/field:pagestyle]>
                 	[field:title /]
@@ -215,7 +217,7 @@ function getDigg(aid)
                 }
              {/dede:field}
 			</div>
-           	<div class="intro"><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top; display:block">{dede:myad name='contentMidPicAD'/}</div>{dede:field.body/}
+           	<div class="intro">{dede:field.body/}
             <div style="clear:both"></div>
             </div>
 			<div class="newdigg" id="newdigg">
@@ -319,7 +321,6 @@ function getDigg(aid)
 
 	</div><!-- /pright -->
 </div>
-<div id="innerfooterAD2" style="margin:10px auto; width:726px">{dede:myad name='innerfooterAD2'/}</div>
 {dede:include filename="footer.htm"/}
 <!-- /footer -->
 

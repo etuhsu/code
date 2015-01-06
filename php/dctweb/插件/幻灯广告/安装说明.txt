@@ -1,0 +1,30 @@
+﻿ ----------------------------------------------------
+|     dedecms模板中心 织梦模块插件下载使用说明          |
+ ----------------------------------------------------
+
+
+一、使用环境
+1.织梦产品DEDECMS内容管理系统
+2.版本：5.5|5.6|5.7
+3.本模块插件为UTF-8编码。GBK请自行转换。
+
+二、安装使用
+1.下载程序解压到本地目录;
+2.本程序包含XMl格式的插件安装文件和安装说明文档;
+3.进入织梦后台模块—>上传新模块—>点击浏览上传XML格式的插件安装文件;
+4.按照提示安装完成该插件，在辅助插件中会发现“幻灯广告”即为该插件的后台管理目录;
+5.完成安装之后上传图片（尺寸根据各自需求而定），在相应处修改以下代码：
+将幻灯处的
+{dede:arclist flag='f' row='5'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+替换为
+{dede:sql sql='select * from #@__flash where ischeck=2 order by sortrank asc limit 0,5'} 
+picarr[[field:global.autoindex/]]  = "[field:pic/]"; 
+linkarr[[field:global.autoindex/]]  = "[field:url/]"; 
+textarr[[field:global.autoindex/]]  = "[field:webname/]"; 
+{/dede:sql}
+
+ 

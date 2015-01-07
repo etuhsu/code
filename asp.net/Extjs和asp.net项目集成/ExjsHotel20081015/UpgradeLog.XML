@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HotelManage">
+</Property><Property Name="解决方案文件" Value="C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\HotelManage.sln">
+</Property><Property Name="Date" Value="2014年7月3日星期四">
+</Property><Property Name="Time" Value="17:15">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="HotelManage.sln" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\HotelManage.sln">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\BLL.csproj" Description="项目文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\BLL.csproj">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\DTreeJSONHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\DTreeJSONHelper.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\GuestInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\GuestInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\GridJSONHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\GridJSONHelper.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\FormJSONHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\FormJSONHelper.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\JSONHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\JSONHelper.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\NavBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\NavBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\OpenRoomInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\OpenRoomInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\OpenRoomRecordInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\OpenRoomRecordInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\OrderRoomInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\OrderRoomInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\PublishBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\PublishBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\RoleInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\RoleInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\RoomBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\RoomBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\RoomTypeBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\RoomTypeBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\TotalInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\TotalInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\UserInfoBLL.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\BLL\UserInfoBLL.cs">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\BLL.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="BLL" Source="BLL\BLL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\DAL.csproj" Description="项目文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\DAL.csproj">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\GuestInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\GuestInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\NavDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\NavDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\OpenRoomInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\OpenRoomInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\OpenRoomRecordInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\OpenRoomRecordInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\OrderRoomInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\OrderRoomInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\PublishDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\PublishDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\RoleInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\RoleInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\RoomDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\RoomDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\RoomTypeDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\RoomTypeDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\SQLHelper.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\SQLHelper.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\TotalInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\TotalInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\UserInfoDAO.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\DAL\UserInfoDAO.cs">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\DAL.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="DAL" Source="DAL\DAL.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\Model.csproj" Description="项目文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\Model.csproj">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\GuestInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\GuestInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\NavBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\NavBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\OpenRoomInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\OpenRoomInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\OpenRoomRecordInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\OpenRoomRecordInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\OrderRomInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\OrderRomInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\PublishBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\PublishBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\RoleInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\RoleInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\RoomBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\RoomBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\RoomTypeBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\RoomTypeBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\TotalInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\TotalInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\UserInfoBean.cs" Description="文件已成功备份为 C:\Documents and Settings\Administrator\My Documents\ExjsHotel20081015\Backup\Model\UserInfoBean.cs">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\Model.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Model" Source="Model\Model.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HotelManage.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="HotelManage.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="BLL" Source="BLL\BLL.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="DAL" Source="DAL\DAL.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="Model" Source="Model\Model.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

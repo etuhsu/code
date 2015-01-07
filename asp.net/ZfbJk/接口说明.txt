@@ -1,0 +1,83 @@
+﻿
+
+产权系统数据交换接口需求
+
+产权系统提供webservice公共接口，通过定制的xml格式数据进行数据交换。
+请求数据包含姓名和身份证号，产权系统将符合的的商品房合同、产权信息、存量房合同信息返回
+
+请求xml格式：
+<root>
+	<request>
+		<users>
+			<user>
+				<sqrxm>张三</sqrxm>                    //姓名
+				<sqrzjmc>居民身份证</ sqrzjmc >
+				<sqrzjhm>4****************2</sqrzjhm>  //证件号码
+			<user>
+			<user>
+				<sqrxm>李四</sqrxm>                    //姓名
+				<sqrzjmc>居民身份证</ sqrzjmc >
+				<sqrzjhm>4****************2</sqrzjhm>  //证件号码
+			<user>
+		<users>
+	</request>
+</root>
+
+返回xml格式：
+<root>
+	<response>
+		<users>
+			<user>
+				<sqrxm>张三</sqrxm>                    //姓名
+				<sqrzjmc>居民身份证</ sqrzjmc >
+				<sqrzjhm>4****************2</sqrzjhm>  //证件号码
+			<user>
+			<user>
+				<sqrxm>李四</sqrxm>                    //姓名
+				<sqrzjmc>居民身份证</ sqrzjmc >
+				<sqrzjhm>4****************2</sqrzjhm>  //证件号码
+			<user>
+		<users>
+		<fwcqlist>//房屋产权信息  如有多条数据，则有多个item，包含正在 网签和网签备案及登记薄登记的，网签后注销的不需要
+			<item>		
+			<qlrmc>张三</qlrmc> //产权人
+			<zjhm></zjhm>//证件号码
+			<fwzl></fwzl>//房屋坐落
+			<jzmj></jzmj>//建筑面积
+			<fwzt></fwzt>//房屋状态
+			<htlb></htlb>//产权类型  1,产权人    2，正在办理
+			<qssj></qssj>//起始时间	
+			<zzsj></zzsj>//终止时间	
+			<xm_match></xm_match>//姓名是否和申请人完全匹配   1，匹配  0，不匹配
+			<hm_match></hm_match>//号码是否和申请人证件号码完全匹配   1，匹配  0，不匹配
+			</item>  
+			<item>		
+			<qlrmc>李四</qlrmc> //产权人
+			<zjhm></zjhm>//证件号码
+			<fwzl></fwzl>//房屋坐落
+			<jzmj></jzmj>//建筑面积
+			<fwzt></fwzt>//房屋状态
+			<htlb></htlb>//产权类型  1,产权人  2，正在办理
+			<qssj></qssj>//起始时间	
+			<zzsj></zzsj>//终止时间	
+			<xm_match></xm_match>//姓名是否和申请人完全匹配   1，匹配  0，不匹配
+			<hm_match></hm_match>//号码是否和申请人证件号码完全匹配   1，匹配  0，不匹配
+			</item> 
+		</fwcqlist>
+		<spflist>//购房房合同信息  如有多条数据，则有多个item，新建商品房和存量房购买都在这展示
+			<item>		
+			<gfr>张三</gfr> //购房人
+			<zjhm></zjhm>//证件号码
+			<fwzl></fwzl>//房屋坐落
+			<htmj></htmj>//合同面积
+			<htje></htje>//合同金额
+			<htlb></htlb>//合同类别
+			<htqdsj></htqdsj>//签订时间	
+			<xm_match></xm_match>//姓名是否和申请人完全匹配   1，匹配  0，不匹配
+			<hm_match></hm_match>//号码是否和申请人证件号码完全匹配   1，匹配  0，不匹配
+			</item>                           
+		</spflist>
+		
+	</response>
+</root>
+

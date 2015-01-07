@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DelPublishInfo.aspx.cs" Inherits="URL_Publish_DelPublishInfo" %>

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body {
+	font-size: 12px;
+}
+
+#main_body {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#main_body #main_table {
+	width: 958px;
+	margin-top: 10px;
+}
+
+#main_body #main_table #naka {
+	border: 1px #99bbe8 solid;
+	margin: 60px auto;
+	width: 415px;
+	text-align: center;
+}
+
+
+#main_body #main_table-b {
+	background: #dfe8f6;
+	border: 1px #99bbe8 solid;
+	width: 958px;
+	margin-top: 10px;
+}
+
+.text1 {
+	BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; BORDER-LEFT: #7f9db9 1px solid; LINE-HEIGHT: 15px; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="$!{blog.author}" />
+<meta name="keywords" content="$!{blog.keywords}" />
+<meta name="robots" content="index, follow, archive" />
+<meta name="copyright" content="$!{blog.author}" />
+<meta name="powered" content="VIFIR DEV Team" />
+<meta name="email" content="$!{blog.email}" />
+<meta name="generator" content="Easy JWeb With ExtJS" />
+	
+<title>$!{blog.title}-$!{blog.author}的文章-开源人</title>
+
+#*
+<link rel="stylesheet" type="text/css" href="http://www.implementek.com/implementek.css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://www.implementek.com/implementek_iefix.css" type="text/css" media="screen"  />
+<![endif]-->
+*#
+
+<link rel="stylesheet" type="text/css" href="/themes/silver-light/stylesheet.css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="/themes/silver-light/stylesheet_iefix.css" type="text/css" media="screen"  />
+<![endif]-->
+<script type="text/javascript" src="/javascript/external.js"></script>
+<script type="text/javascript" src="/javascript/swfobject.js"></script>
+<script type="text/javascript" src="/themes/silver-light/preload.js" defer="defer"></script>
+<link rel="shortcut icon" href="/themes/silver-light/images/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+<div id="shiv"></div>
+<div id="wrap_container">
+  <div id="container">
+
+    <div id="header">
+      <div id="logo">
+        <h1>
+        <a href="/index.html">
+        	$!{blog.domain}.blog.vifir.com
+        </a></h1>
+      </div>
+      <div id="top_nav">
+        <ul id="language_ul">
+          <li id="nav_srpski"></li>
+      #*
+          <li id="nav_srpski"><a  href="../sr/index.html">Srpski</a></li>
+        *#
+        </ul>
+        <ul id="nav_ul">
+          <li class="navs_"><a href="http://www.vifir.com/">VifirCOM</a></li>
+          <li class="navs_"><a href="/blog.ejf?blogId=$!{blog.id}">$!{blog.title}</a></li>
+          <li class="navs_"><a href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=topicList">我的文章</a></li>
+          <li class="navs_"><a href="/blog.ejf?blogId=$!{blog.id}&amp;cmd=albumList">我的相册</a></li>
+        </ul>
+      </div>
+      <!-- navigation ending -->
+    </div>
+    
+    <!-- header ending -->
+    <div id="flashcontent">
+      <div class="image">
+      <img src="/themes/silver-light/images/image_home.gif" alt="VIFIR" width="880" height="280" />
+     </div>
+    </div>
+
+    <div class="my_main_content">
+	<div class="blog_title">$!{title} $!CommUtil.format($!displayTime)</div>
+		<ul>
+			<li>
+				<div class="blog_title">$!{title} $!CommUtil.format($!displayTime)</div>
+				<span>
+$!{content}
+<br />
+		发表于：$!{CommUtil.format($inputTime)} $!{user.name} 阅读($!{readTimes}) |  评论($!{comments.size()}) | $!{category.name}
+				</span>
+			</li>
+		</ul>
+
+    
+    </div>
+    
+    
+    
+    
+    <!-- content ending -->
+    <div id="footer">
+      <p>It is proudly powered Powered by VIFIR.COM &amp; &copy; 2007-2008 $!{blog.author} 版权所有 theme by Bob</p>
+    </div>
+  </div>
+  <!-- container ending -->
+</div>
+<!-- wraper container ending -->
+
+
+</body>
+</html>

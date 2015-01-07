@@ -1,0 +1,308 @@
+Asp.net(C#)常用函数表
+
+1、DateTime 数字型 
+System.DateTime currentTime=new System.DateTime(); 
+1.1 取当前年月日时分秒 
+currentTime=System.DateTime.Now; 
+1.2 取当前年 
+int 年=currentTime.Year; 
+1.3 取当前月 
+int 月=currentTime.Month; 
+1.4 取当前日 
+int 日=currentTime.Day; 
+1.5 取当前时 
+int 时=currentTime.Hour; 
+1.6 取当前分 
+int 分=currentTime.Minute; 
+1.7 取当前秒 
+int 秒=currentTime.Second; 
+1.8 取当前毫秒 
+int 毫秒=currentTime.Millisecond; 
+（变量可用中文）2、Int32.Parse(变量) Int32.Parse("常量") 
+字符型转换 转为32位数字型 
+1.9 取中文日期显示——年月日时分 
+string strY=currentTime.ToString("f"); //不显示秒 
+1.10 取中文日期显示_年月 
+string strYM=currentTime.ToString("y"); 
+1.11 取中文日期显示_月日 
+string strMD=currentTime.ToString("m"); 
+1.12 取当前年月日，格式为：2003-9-23 
+string strYMD=currentTime.ToString("d"); 
+1.13 取当前时分，格式为：14：24 
+string strT=currentTime.ToString("t");
+
+3、 变量.ToString() 
+字符型转换 转为字符串 
+12345.ToString("n"); //生成 12,345.00 
+12345.ToString("C"); //生成 ￥12,345.00 
+12345.ToString("e"); //生成 1.234500e+004 
+12345.ToString("f4"); //生成 12345.0000 
+12345.ToString("x"); //生成 3039 (16进制) 
+12345.ToString("p"); //生成 1,234,500.00% 
+
+
+4、变量.Length 数字型 
+取字串长度： 
+如： string str="中国"; 
+int Len = str.Length ; //Len是自定义变量， str是求测的字串的变量名 
+
+5、System.Text.Encoding.Default.GetBytes(变量) 
+字码转换 转为比特码 
+如：byte[] bytStr = System.Text.Encoding.Default.GetBytes(str); 
+然后可得到比特长度： 
+len = bytStr.Length; 
+
+6、System.Text.StringBuilder("") 
+字符串相加，（+号是不是也一样？） 
+如：System.Text.StringBuilder sb = new System.Text.StringBuilder(""); 
+sb.Append("中华"); 
+sb.Append("人民"); 
+sb.Append("共和国"); 
+
+7、变量.Substring(参数1,参数2); 
+有点类似vb里的Left，right，Mid函数。
+截取字串的一部分，参数1为左起始位数，参数2为截取几位。 
+如：string s1 = str.Substring(0,2); 
+参数2可以缺省，表示从参数1开始取到字符串末尾。如：
+String a = "abc";
+a.substring(1)
+就是"bc"。
+
+
+8、String user_IP=Request.ServerVariables["REMOTE_ADDR"].ToString(); 
+取远程用户IP地址 
+
+9、穿过代理服务器取远程用户真实IP地址： 
+if(Request.ServerVariables["HTTP_VIA"]!=null){ 
+string user_IP=Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString(); 
+}else{ 
+string user_IP=Request.ServerVariables["REMOTE_ADDR"].ToString(); 
+} 
+
+10、 Session["变量"]; 
+存取Session值； 
+如，赋值： Session["username"]="小布什"; 
+
+取值： Object objName=Session["username"]; 
+String strName=objName.ToString(); 
+清空： Session.RemoveAll(); 
+
+11、String str=Request.QueryString["变量"]; 
+用超链接传送变量。 
+如在任一页中建超链接:<a href=Edit.aspx?fbid=23>点击</a> 
+在Edit.aspx页中取值：String str=Request.QueryString["fdid"]; 
+
+12、DOC对象.CreateElement("新建节点名"); 
+创建XML文档新节点 
+
+13、父节点.AppendChild(子节点)； 
+将新建的子节点加到XML文档父节点下 
+
+14、 父节点.RemoveChild(节点); 
+删除节点 
+
+15、Response 
+Response.Write("字串")； 
+Response.Write(变量)； 
+向页面输出。 
+
+Response.Redirect("URL地址"）； 
+跳转到URL指定的页面 
+
+16、char.IsWhiteSpce(字串变量，位数)——逻辑型 
+查指定位置是否空字符； 
+如： 
+string str="中国 人民"; 
+Response.Write(char.IsWhiteSpace(str,2)); //结果为：True, 第一个字符是0位，2是第三个字符。 
+
+17、char.IsPunctuation('字符') --逻辑型 
+查字符是否是标点符号 
+如：Response.Write(char.IsPunctuation('A')); //返回：False 
+
+18、(int)'字符' 
+把字符转为数字，查代码点，注意是单引号。
+如： 
+Response.Write((int)'中'); //结果为中字的代码：20013 
+
+19、(char)代码 
+把数字转为字符，查代码代表的字符。 
+如： 
+Response.Write((char)22269); //返回"国"字。 
+
+20、 Trim() 
+清除字串前后空格 
+
+21 、字串变量.Replace("子字串","替换为") 
+字串替换 
+如： 
+string str="中国"; 
+str=str.Replace("国","央"); //将国字换为央字 
+Response.Write(str); //输出结果为"中央" 
+
+再如：（这个非常实用） 
+
+string str="这是<script>脚本"; 
+str=str.Replace("<","<font><</font>"); //将左尖括号替换为 <font> 与 < 与 </font> （或换为<，但估计经XML存诸后，再提出仍会还原） 
+Response.Write(str); //显示为："这是<script>脚本" 
+
+如果不替换，<script>将不显示，如果是一段脚本，将运行；而替换后，脚本将不运行。 
+这段代码的价值在于：你可以让一个文本中的所有HTML标签失效，全部显示出来，保护你的具有交互性的站点。 
+具体实现：将你的表单提交按钮脚本加上下面代码： 
+string strSubmit=label1.Text; //label1是你让用户提交数据的控件ID。 
+strSubmit=strSubmit.Replace("<","<font><</font>"); 
+然后保存或输出strSubmit。 
+用此方法还可以简单实现UBB代码。 
+
+22、Math.Max(i,j) 
+取i与j中的最大值 
+如 int x=Math.Max(5,10); // x将取值 10 
+
+23、字串对比一般都用: if(str1==str2){ } , 但还有别的方法: 
+
+(1)、 
+string str1; str2 
+//语法: str1.EndsWith(str2); __检测字串str1是否以字串str2结尾,返回布尔值.如: 
+if(str1.EndsWith(str2)){ Response.Write("字串str1是以"+str2+"结束的"); } 
+
+(2)、 
+//语法:str1.Equals(str2); __检测字串str1是否与字串str2相等,返回布尔值,用法同上. 
+
+(3)、 
+//语法 Equals(str1,str2); __检测字串str1是否与字串str2相等,返回布尔值,用法同上. 
+
+24、IndexOf() 、LastIndexOf() 
+查找字串中指定字符或字串首次（最后一次）出现的位置,返回索引值，如： 
+str1.IndexOf("字")； //查找"字"在str1中的索引值（位置） 
+str1.IndexOf("字串")；//查找"字串"的第一个字符在str1中的索引值（位置） 
+str1.IndexOf("字串",3,2)；//从str1第4个字符起，查找2个字符，查找"字串"的第一个字符在str1中的索引值（位置） 
+
+25、Insert() 
+在字串中指定索引位插入指定字符。如： 
+str1.Insert(1,"字");在str1的第二个字符处插入"字"，如果str1="中国"，插入后为"中字国"； 
+
+26、PadLeft()、PadRight() 
+在字串左（或右）加空格或指定char字符，使字串达到指定长度，如： 
+<% 
+string str1="中国人"; 
+str1=str1.PadLeft(10,'1'); //无第二参数为加空格 
+Response.Write(str1); //结果为"1111111中国人" ， 字串长为10 
+%> 
+
+27、Remove() 
+从指定位置开始删除指定数的字符 
+字串对比一般都用: if(str1==str2){ } , 但还有别的方法: 
+
+1、 
+string str1; str2 
+//语法: str1.EndsWith(str2); __检测字串str1是否以字串str2结尾,返回布尔值.如: 
+if(str1.EndsWith(str2)){ Response.Write("字串str1是以"+str2+"结束的"); } 
+
+2、 
+//语法:str1.Equals(str2); __检测字串str1是否与字串str2相等,返回布尔值,用法同上. 
+
+3、 
+//语法 Equals(str1,str2); __检测字串str1是否与字串str2相等,返回布尔值,用法同上. 
+
+IndexOf() 
+查找字串中指定字符或字串首次出现的位置,返首索引值，如： 
+str1.IndexOf("字")； //查找"字"在str1中的索引值（位置） 
+str1.IndexOf("字串")；//查找"字串"的第一个字符在str1中的索引值（位置） 
+str1.IndexOf("字串",3,2)；//从str1第4个字符起，查找2个字符，查找"字串"的第一个字符在str1中的索引值（位置） 
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝Asp.net(C#)常用函数表 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Abs(number)  取得数值的绝对值。 
+Asc(String)  取得字符串表达式的第一个字符ASCII  码。 
+Atn(number)  取得一个角度的反正切值。 
+CallByName (object, procname, usecalltype,[args()])  执行一个对象的方法、设定或传回对象的属性。 
+CBool(expression)  转换表达式为Boolean  型态。 
+CByte(expression)  转换表达式为Byte  型态。 
+CChar(expression)  转换表达式为字符型态。 
+CDate(expression)  转换表达式为Date  型态。 
+CDbl(expression)  转换表达式为Double  型态。 
+CDec(expression)  转换表达式为Decimal  型态。 
+CInt(expression)  转换表达式为Integer  型态。 
+CLng(expression)  转换表达式为Long  型态。 
+
+CObj(expression)  转换表达式为Object  型态。 
+CShort(expression)  转换表达式为Short  型态。 
+CSng(expression)  转换表达式为Single  型态。 
+CStr(expression)  转换表达式为String  型态。 
+Choose (index, choice-1[, choice-2, ... [, choice-n]])  以索引值来选择并传回所设定的参数。 
+Chr(charcode)  以ASCII  码来取得字符内容。 
+Close(filenumberlist)  结束使用Open  开启的档案。 
+Cos(number)  取得一个角度的余弦值。 
+Ctype(expression, typename)  转换表达式的型态。 
+DateAdd(dateinterval, number, datetime)  对日期或时间作加减。 
+DateDiff(dateinterval, date1, date2)  计算两个日期或时间间的差值。 
+DatePart (dateinterval, date)  依接收的日期或时间参数传回年、月、日或时间。 
+DateSerial(year, month, day)  将接收的参数合并为一个只有日期的Date  型态的数据。 
+DateValue(datetime)  取得符合国别设定样式的日期值，并包含时间。
+
+Day(datetime)  依接收的日期参数传回日。 
+Eof(filenumber)  当抵达一个被开启的档案结尾时会传回True 。 
+Exp(number)  依接收的参数传回e  的次方值。 
+FileDateTime(pathname)  传回档案建立时的日期、时间。 
+FileLen(pathname)  传回档案的长度，单位是Byte 。 
+Filter(sourcearray, match[, include[, compare]])  搜寻字符串数组中的指定字符串，凡是数组元素中含有指定字符串，会将它们结合成新的字符串数组并传回。若是要传回不含指定字符串的数组元素，则include  参数设为False 。compare  参数则是设定搜寻时是否区分大小写，此时只要给TextCompare  常数或1  即可。 
+Fix(number)  去掉参数的小数部分并传回。 
+Format(expression[, style[, firstdayofweek[, firstweekofyear]]])  将日期、时间和数值资料转为每个国家都可以接受的格式。 
+FormatCurrency(expression[,numdigitsafterdecimal [,includeleadingdigit]])  将数值输出为金额型态。 
+numdigitsafterdecimal  参数为小数字数，includeleadingdigit  参数为当整数为0  时是否补至整数字数。 
+
+FormatDateTime(date[,namedformat])  传回格式化的日期或时间数据。 
+FormatNumber(expression[,numdigitsafterdecimal [,includeleadingdigit]])  传回格式化 
+的数值数据。Numdigitsafterdecimal  参数为小数字数，includeleadingdigit  参数为当整数为0  时是否补至整数字数。 
+FormatPercent(expression[,numdigitsafterdecimal [,includeleadingdigit]])  传回转换为百分比格式的数值数据。numdigitsafterdecimal  参数为小数字数，includeleadingdigit  参数为当整数为0  时是否补至整数字数。 
+GetAttr(2005620163726.htm)  传回档案或目录的属性值。 
+Hex(number)  将数值参数转换为16  进制值。 
+Hour(time)  传回时间的小时字段，型态是Integer 。 
+Iif(expression, truepart, falsepart)  当表达式的传回值为True  时执行truepart  字段的程序，反之则执行falsepart  字段。 
+InStr([start, ]string1, string2)  搜寻string2  参数设定的字符出现在字符串的第几个字符，start  为由第几个字符开始寻找，string1  为欲搜寻的字符串，string2  为欲搜寻的字符。 
+Int(number)  传回小于或等于接收参数的最大整数值。 
+IsArray(varname)  判断一个变量是否为数组型态，若为数组则传回True ，反之则为False 。
+
+IsDate(expression)  判断表达式内容是否为DateTime  型态，若是则传回True ，反之则为False 。 
+IsDbNull(expression)  判断表达式内容是否为Null ，若是则传回True ，反之则为False 。 
+IsNumeric(expression)  判断表达式内容是否为数值型态，若是则传回True ，反之则为False 。 
+Join(sourcearray[, delimiter])  将字符串数组合并唯一个字符串，delimiter  参数是设定在各个元素间加入新的字符串。 
+Lcase(string)  将字符串转换为小写字体。 
+Left(string, length)  由字符串左边开始取得length  参数设定长度的字符。 
+Len(string)  取得字符串的长度。 
+Log(number)  取得数值的自然对数。 
+Ltrim(string)  去掉字符串的左边空白部分。 
+Mid(string, start[, length])  取出字符串中strat  参数设定的字符后length  长度的字符串，若length  参数没有设定，则取回start  以后全部的字符。 
+Minute(time)  取得时间内容的分部分，型态为Integer 。 
+MkDir(path)  建立一个新的目录。 
+Month(date)  取得日期的月部分，型态为Integer 。
+
+MonthName(month)  依接收的月份数值取得该月份的完整写法。 
+Now()  取得目前的日期和时间。 
+Oct(number)  将数值参数转换为8  进制值。 
+Replace(expression, find, replace)  将字符串中find  参数指定的字符串转换为replace  参数指定的字符串。 
+Right(string,length)  由字符串右边开始取得length  参数设定长度的字符。 
+RmDir(path)  移除一个空的目录。 
+Rnd()  取得介于0  到1  之间的小数，如果每次都要取得不同的值，使用前需加上Randomize  叙述。 
+Rtrim(string)  去掉字符串的右边空白部分。 
+Second(time)  取得时间内容的秒部分，型态为Integer 。 
+Sign(number)  取得数值内容是正数或负数，正数传回1 ，负数传回-1 ，0  传回0 。 
+Sin(number)  取得一个角度的正弦值。 
+Space(number)  取得number  参数设定的空白字符串。
+
+Split(expression[, delimiter])  以delimiter  参数设定的条件字符串来将字符串分割为字符串数组。 
+Sqrt(number)  取得一数值得平方根。 
+Str(number)  将数字转为字符串后传回。 
+StrReverse(expression)  取得字符串内容反转后的结果。 
+Tan(number)  取得某个角度的正切值。 
+TimeOfDay()  取得目前不包含日期的时间。 
+Timer()  取得由0:00  到目前时间的秒数，型态为Double 。 
+TimeSerial(hour, minute, second)  将接收的参数合并为一个只有时间Date  型态的数据。 
+TimaValue(time)  取得符合国别设定样式的时间值。 
+Today()  取得今天不包含时间的日期。 
+Trim(string)  去掉字符串开头和结尾的空白。 
+TypeName(varname)  取得变量或对象的型态。 
+Ubound(arrayname[, dimension])  取得数组的最终索引值，dimension  参数是指定取得第几维度的最终索引值。 
+
+Ucase(string)  将字符串转换为大写。 
+Val(string)  将代表数字的字符串转换为数值型态，若字符串中含有非数字的内容则会将其去除后，合并为一数字。 
+Weekday(date)  取的参数中的日期是一个星期的第几天，星期天为1 、星期一为2 、星期二为3  依此类推。 
+WeekDayName(number)  依接收的参数取得星期的名称，可接收的参数为1  到7 ，星期天为1 、星期一为2 、星期二为3  依此类推。

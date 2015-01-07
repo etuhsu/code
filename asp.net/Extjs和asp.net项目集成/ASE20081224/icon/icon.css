@@ -1,0 +1,165 @@
+﻿/*新增 添加*/
+.add-css
+{
+	background-image:url(add.gif) !important;
+}
+/*删除*/
+.remove-css
+{
+	background-image:url(delete.gif) !important;
+}
+/*保存*/
+.save-css
+{
+	background-image:url(save.gif) !important;
+}
+/*修改*/
+.modify-css
+{
+	background-image:url(modify.gif) !important;
+}
+/*打印*/
+.print-css
+{
+	background-image:url(print.gif) !important;
+}
+/*查询*/
+.search-css
+{
+	background-image:url(search.gif) !important;
+}
+/*确定*/
+.ok-css
+{
+	background-image:url(ok.gif) !important;
+}
+/*浏览*/
+.show-css
+{
+	background-image:url(show.gif) !important;
+}
+/*客户查询*/
+.customer-search
+{
+	background-image:url(user_search.gif)!important;
+}
+/*客户明细*/
+.customer-detail
+{
+	background-image:url(user_detail.gif)!important;
+}
+/*客户修改*/
+.customer-modify
+{
+	background-image:url(user_modify.gif)!important;
+}
+/*客户删除*/
+.customer-remove
+{
+	background-image:url(user_remove.gif)!important;
+}
+/*商品上架*/
+.uptat-css
+{
+	background-image:url(uptat.gif)!important;
+}
+/*商品下架*/
+.downtat-css
+{
+	background-image:url(downtat.gif)!important;
+}
+/*入库审核*/
+.auditing-css
+{
+	background-image:url(auditing.gif)!important;
+}
+/*盘点检验*/
+.check-css
+{
+	background-image:url(check.gif)!important;
+}
+/*平衡库存*/
+.blance-css
+{
+	background-image:url(blance.gif)!important;
+}
+/*计算*/
+.caculate-css
+{
+	background-image:url(caculate.gif)!important;
+}
+/*顶部查询-设置*/
+.search-option-css
+{
+	background-image:url(search-option.gif)!important;
+}
+/*上传*/
+.upload-option-css
+{
+	background-image:url(upload.gif)!important;
+}
+/*下载*/
+.download-option-css
+{
+	background-image:url(download.gif)!important;
+}
+/*全选*/
+.selectall-option-css
+{
+	background-image:url(selectall.gif)!important;
+}
+/*反选*/
+.selectno-option-css
+{
+	background-image:url(selectno.gif)!important;
+}
+/*客户去重*/
+.repeat-option-css
+{
+	background-image:url(repeat.gif)!important;
+}
+/*客户导入*/
+.batch-option-css
+{
+	background-image:url(batch.gif)!important;
+}
+/*饼形图*/
+.selectno-option-css
+{
+	background-image:url(pie.gif)!important;
+}
+/*添加分组*/
+.selectno-option-css
+{
+	background-image:url(group-add.gif)!important;
+}
+/*Excel*/
+.excel-css
+{
+	background-image:url(excel.jpg) !important;
+}
+/*删除分组*/
+.selectno-option-css
+{
+	background-image:url(group-remove.gif)!important;
+}
+/*下一步*/
+.next-option-css
+{
+	background-image:url(next.gif)!important;
+}
+/*菜单主选项*/
+.menu-master-css
+{
+	background-image:url(list-items.gif)!important;
+}
+/*菜单子选项*/
+.menu-option-css
+{
+	background-image:url(menu-show.gif)!important;
+}
+/*GRID FORM */
+.menu-formgrid-css
+{
+	background-image:url(details.gif)!important;
+}

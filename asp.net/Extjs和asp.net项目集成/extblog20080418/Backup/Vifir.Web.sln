@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vifir.Web", "Vifir.Web\Vifir.Web.csproj", "{AABBE25C-71E2-4B53-8F50-177492CEEF3D}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AABBE25C-71E2-4B53-8F50-177492CEEF3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABBE25C-71E2-4B53-8F50-177492CEEF3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABBE25C-71E2-4B53-8F50-177492CEEF3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABBE25C-71E2-4B53-8F50-177492CEEF3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9867680-A519-4B16-BAC4-08968FA4F4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9867680-A519-4B16-BAC4-08968FA4F4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9867680-A519-4B16-BAC4-08968FA4F4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9867680-A519-4B16-BAC4-08968FA4F4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBBA86A0-3329-4853-9145-DA6C7920B9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBBA86A0-3329-4853-9145-DA6C7920B9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBBA86A0-3329-4853-9145-DA6C7920B9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBBA86A0-3329-4853-9145-DA6C7920B9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

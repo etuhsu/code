@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="AddUserInfo.aspx.cs" Inherits="URL_UserInfo_AddUserInfo" %>

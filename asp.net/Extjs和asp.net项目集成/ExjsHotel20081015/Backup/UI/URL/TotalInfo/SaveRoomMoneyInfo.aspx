@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SaveRoomMoneyInfo.aspx.cs" Inherits="URL_TotalInfo_SaveRoomMoneyInfo" %>

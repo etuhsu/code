@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MPage.master.cs" Inherits="MPage" %>
+<%@ Register Assembly="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+    Namespace="System.Web.UI" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/import.css" />
+<!--[if ie]>
+<style type="text/css" media="screen">
+	.menu a {zoom:1;}
+</style>
+<![endif]-->
+<style type="text/css">
+
+.ula {
+	list-style-type: none;
+}
+
+.ula li {
+	display: inline;
+}
+
+.ula li img {
+	border: 1px #0033FF solid;
+}
+.scroll_div {
+	width:900px;
+	height:146px;
+	margin:0 auto;
+	overflow: hidden;
+	white-space: nowrap;
+	background:#ffffff;
+}
+.scroll_div img {
+	width:140px;
+	height:140px;
+	border: 0;
+	margin: auto 2px;
+	border:1px #efefef solid;
+}
+table.gridview_m  td
+{
+    BORDER-BOTTOM: #cccccc 1px dotted;
+	padding: 5px 0;
+}
+table.gridview_m  th
+{
+    BORDER-BOTTOM: #cccccc 1px dotted;
+	padding: 5px 0;
+	FONT-WEIGHT: bold;
+}
+
+#scroll_begin, #scroll_end, #scroll_begin ul, #scroll_end ul, #scroll_begin ul li, #scroll_end ul li {
+	display:inline;
+}/*设置ul和li横排*/
+</style>
+<script type="text/javascript" src="js/togglemenu.js"></script>
+</head>
+<body>
+<form id="Form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+<div id="main" class="clearfix">
+  <div style="padding: 10px 5px 0 5px;" class="clearfix">
+    <div style="width: 210px; float: left;"><a href="#"><img src="img_all/logo.jpg" width="63" height="67" border="0" /></a>
+	      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="135" height="67">
+	        <param name="movie" value="swf/swf.swf" />
+	        <param name="quality" value="high" />
+	        <embed src="swf/swf.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="135" height="67"></embed>
+	      </object>
+	    </div>
+    <div style="float:right;"><table cellspacing=0 cellpadding=0 align="center" border=0>
+        <tbody>
+          <tr>
+            <td valign=top align=right><table cellspacing=0 cellpadding=0 width="100%" border=0>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td><img src="img_all/space.gif" width="1" height="20" /></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td align=right><img src="img_all/index_004.gif" width="9" height="11" />&nbsp;&nbsp;&nbsp;&nbsp;<a href="ShopBagList.aspx">购物车</a>&nbsp;&nbsp;</td>
+                    <td width="29"><a href="SearchList.aspx">搜索</a></td>
+                    <td width=5></td>
+                  </tr>
+                  <tr>
+                    <td>　</td>
+                    <td align=right>
+                        <asp:Label ID="lb_login" runat="server" Text="Label"></asp:Label></td>
+                    <td width="29"><a href="index.aspx">首页</a></td>
+                    <td width=5></td>
+                  </tr>
+                </tbody>
+              </table></td>
+            <td valign=top width=156><img src="img_all/top_line.gif" width="13" height="67" /><img height=67 src="img_all/top_font.gif" width=143 /></td>
+          </tr>
+        </tbody>
+      </table></div>
+  </div>
+  <div id="tit" class="clearfix">
+    <ul>
+		<li><a href="ListLine.aspx?prl_name=家居用品">家居用品</a></li>
+		<li><a href="ListLine.aspx?prl_name=家居饰品">家居饰品</a></li>
+		<li><a href="BaseInfo.aspx?frm_id=60">会员专享</a></li>
+		<li><a href="Activity.aspx?frm_id=60">季节特售</a></li>
+		<li><a href="BaseInfo.aspx?frm_id=34">客户服务</a></li>
+	</ul>
+  </div>
+  <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+  </asp:contentplaceholder>
+  <div id="black_line"></div>
+	<div style="text-align:center">
+<p style="margin: 10px 0;"><a href="BaseInfo.aspx?frm_id=24">公司简介</a>&nbsp;|&nbsp;<a href="BaseInfo.aspx?frm_id=34">客户服务</a>
+&nbsp;|&nbsp;<a href="BaseInfo.aspx?frm_id=27">企业采购</a>&nbsp;|&nbsp;<a href="BaseInfo.aspx?frm_id=28">个性定制</a></p>
+<p class="font_s1">沪ICP备08001670号</p>
+</div>
+</div>
+</form>
+</body>
+</html>

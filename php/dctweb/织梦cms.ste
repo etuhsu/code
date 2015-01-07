@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site SitePrefVersionMajor="12" SitePrefVersionMinor="0">
+    <localinfo sitename="%E7%BB%87%E6%A2%A6cms" ftporrdsserver="FALSE" mediaqueryfile="" localroot="F:%5Ccode%5Cphp%5Cdctweb%5Cuploads%5C" assetfolder="F:%5Ccode%5Cphp%5Cdctweb%5Cuploads%5CSpryAssets%5C" webfontsfolder="F:%5Ccode%5Cphp%5Cdctweb%5Cuploads%5Cuploads%5Cwebfonts%5C" imagefolder="" spacerfilepath="" refreshlocal="TRUE" rewritedocrellinks="FALSE" cache="TRUE" httpaddress="http://120.24.217.136/" relativeTo="DOCUMENT" caseSensitiveLinks="FALSE" curserver="appserver"/>
+    <designnotes usedesignnotes="TRUE" sharedesignnotes="FALSE"/>
+    <sitemap homepage="" pagesperrow="200" columnwidth="125" showdependentfiles="FALSE" showpagetitles="FALSE" showhiddenfiles="FALSE"/>
+    <bcinfo siteid="0" sitename="" secureURL=""/>
+    <fileviewcolumns sharecolumns="TRUE">
+        <column name="Local%20Files" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="131" remotewidth="180"/>
+        <column name="Notes" align="center" show="FALSE" share="FALSE" builtin="TRUE" localwidth="36" remotewidth="36"/>
+        <column name="Size" align="right" show="TRUE" share="FALSE" builtin="TRUE" localwidth="40" remotewidth="-2"/>
+        <column name="Type" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="60" remotewidth="60"/>
+        <column name="Modified" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="102"/>
+        <column name="Checked%20Out%20By" align="left" show="FALSE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="-1"/>
+</fileviewcolumns>
+    <serverlist>
+        <server servermodel="" servertype="remoteAndTestingServer" weburl="http://120.24.217.136/" connectionsmigrated="FALSE" serverobjectsversion="1" defaultdoctype="HTML" accesstype="ftp" host="120.24.217.136" remoteroot="default/" name="%E8%BF%9C%E7%A8%8B%E6%9C%8D%E5%8A%A1%E5%99%A8" maintainSyncInfo="TRUE" autoUpload="TRUE" user="www" pw="6F46343B78785A4D74" savePW="TRUE" enablecheckin="FALSE" checkoutname="" checkoutwhenopen="TRUE" emailaddress="" usefirewall="FALSE" usepasv="FALSE" useSFTP="FALSE" useFTPS="FALSE" useImplicitFTPS="FALSE" encryptOnlyCommandChannel="FALSE" authenticationMode="TRUSTED_CERTIFICATE" useIPv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="utf-8" testsvrbinaccesstype="ftp" testsvrbinhost="120.24.217.136" testsvrbinremoteroot="default/" testsvrbinuser="" testsvrbinpw="" testsvrbinsavePW="FALSE" testsvrbinusefirewall="FALSE" testsvrbinusepasv="FALSE" testsvrbinuseSFTP="FALSE" testsvrbinuseIPv6="FALSE" testsvrbinuseftpoptimization="TRUE" testsvrbinusealternaterename="FALSE" testsvrbinuseTestingServer="FALSE" testsvrbinpathNameCharacterSet="utf-8"/>
+</serverlist>
+    <cloaking enabled="TRUE" patterns="FALSE">
+        <cloakedfolder folder="dw_php_codehinting.config"/>
+        <cloakedpattern pattern=".png"/>
+        <cloakedpattern pattern=".fla"/>
+</cloaking>
+    <contributorintegration enabled="FALSE"/>
+</site>

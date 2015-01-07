@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/> 
+<meta name="format-detection" content="telephone=no" />
+<title>【南京出租信息_南京租房】_南京租房网_365租房网</title>
+<meta name="keywords" content="南京出租信息，南京租房"/>
+<meta name="description" content="365租房网是南京租房最大的网上交易平台,为您提供最新的南京出租信息。租好房,上365租房网!"/>
+<meta name="apple-mobile-web-app-title" content="365淘房">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<script src="../js/jquery.js?version=1.0"></script> 
+<script src="../js/common.js?version=1.0"></script>
+<link rel="stylesheet" type="text/css" href="../css/city/nj.css" /><link rel="stylesheet" type="text/css" href="../css/v2.css" />
+<link rel="canonical" href="http://m.house365.com/nj/renthouse/" /> 
+<script type="text/javascript">
+var appdowntip=getCookie('appdowntip');
+var closetip=getCookie('closetip');
+if(navigator.cookieEnabled && appdowntip==null){
+   //document.write('<meta name="apple-itunes-app" content="app-id=543472063">');
+   //setCookie('appdowntip',true);
+}
+$(document).ready(function(){
+	var apppop=getCookie('apppop');
+	if(navigator.cookieEnabled && apppop==null){
+	    setCookie('apppop',true);
+		//$("#app_downloads").show();
+		$("#app_downloads").css("width",document.body.clientWidth);
+		$("#app_downloads").css("height",document.body.clientHeight);
+		$(".turn_off").click( function () {
+			//$("#app_downloads").hide();
+		});
+		$(".no_download").click( function () {
+			//$("#app_downloads").hide();
+		});
+	}
+	//get_location();
+  });
+</script>
+<link rel="apple-touch-icon" href="http://m.house365.com/images/apple-touch-icon.png" sizes="144x144" />
+</head>
+<body>
+<div id="app-download-bar" class="app-download-bar" style="display:none">
+<a id="btn_app_down" href="http://app.house365.com/taofang/?channel=cptfxz" target="_blank"></a><span id="closetip" class="downtxt fr">关闭</span>
+</div>
+<div id="app-open-bar" class="app-open-bar" style="display:none">
+<span class="open_close" id="app_open_close"></span>
+<span class="open_icon"></span>
+ <span class="open_alt">极速体验更省流量</span>
+ <span id="openapp" class="opentxt fr">立即打开</span>
+</div>
+
+ <!--提示下载-->
+<div id="app_downloads" style="display:none">
+	<div id="app_download_popup">
+	    <div class="link_btn">
+		<a class="turn_off" href="javascript:hideid('app_download_popup')"></a>
+		<a class="no_download" href="javascript:hideid('app_download_popup')">暂不下载</a>
+		<a class="yes_download" href="http://app.house365.com/taofang/?channel=cptfxz">立刻下载</a>  
+	    </div>
+	</div>
+</div>
+ 
+<link rel="stylesheet" type="text/css" href="../css/v2.css">
+<header class="m_wrap">
+<section id="topbar" class="topnav_tool">
+<button class="top_btn" id="btn_back">返回</button>
+<h1>租房</h1>
+<button class="top_btn_fav">导航</button>
+</section>
+</header>
+<div id="topnav_menu" class="topnav_menu" style="display:none">
+  <ul>
+	<li  id="topnav_menu_index"><a href="http://m.house365.com/nj.html" target="_self">首页</a><s class="nav_gap"></s></li>
+	<li  id="topnav_menu_newhouse"><a href="http://m.house365.com/nj/newhouse/" target="_self">新房</a><s class="nav_gap"></s></li>
+	<li id="topnav_menu_sellhouse"><a href="http://m.house365.com/nj/sellhouse/" target="_self">二手房</a><s class="nav_gap"></s></li> 
+	<li id="topnav_menu_renthouse"><a href="http://m.house365.com/nj/renthouse/" target="_self">租房</a><s class="nav_gap"></s></li>
+	<li id="topnav_menu_news"><a href="http://m.house365.com/nj/news/">资讯</a><s class="nav_gap"></s></li>   
+	<li id="topnav_menu_bbs"><a href="http://m.house365.com/nj/bbs/" target="_self">社区</a></li>  
+	<li id="topnav_menu_tlf"><a href="http://m.house365.com/?app=event&type=tlf">团购</a><s class="nav_gap"></s></li>
+	<li id="topnav_menu_coupon"><a href="http://m.house365.com/?app=event&type=coupon">优惠</a><s class="nav_gap"></s></li> 
+	<li id="topnav_menu_event"><a href="http://m.house365.com/?app=event&type=event">看房</a></li>
+</ul>
+<span class="topnav_contract"><i class="icon-up"></i></span>
+</div>
+<script>
+var choose_opts= new Map();
+var choose_opt_labels=new Array();
+
+function submitsearch(){
+    var jumpurl = "http://m.house365.com/nj/renthouse/i_x_m_d_j_b_k" + encodeURIComponent(jQuery("#searchInput").val())+"/";
+	document.location.href = jumpurl;
+}
+</script>
+<!--搜索区域-->
+<div class="search_wrap">
+<div id="sugglist"></div>
+      <form method="get" id="search_form" name="search_form" action="">
+          <div class="search-input">
+              	<input type="hidden" name="app" value="renthouse"/>
+	      		<input type="hidden" name="infofrom" value=""/>
+	      		<input type="hidden" name="infotype" value=""/>
+	      		<input type="hidden" name="buildarea" value=""/>
+	      		<input type="hidden" name="district" value=""/>
+	      		<input type="hidden" name="price" value=""/> 
+              	<label for="searchInput" class="forSearchInput2"></label>
+              	<input type="text" class="textInput" name="keyword" value="" id="searchInput" placeholder="请输入房源/小区关键字"   autocomplete="off"/>
+	      		<input type="bottom" class="search-submit right" onclick="submitsearch()" vlaue="搜索"/>
+          </div>
+          
+      </form>
+</div> 
+
+<!--已选择条件-->
+<div class="choose_selected">
+<span class="choose_sel_label">已选条件：</span>
+<ul id="choose_selected_list"> 
+</ul>
+</div>
+
+<!--筛选区域-->
+<h2 class="h2_tabtitle"><span class="cur_title_font">筛选房源</span></h2>
+<div class="choose_opt">
+<!--新的筛选条件start-->
+<dl>
+  <dt>来源</a></dt>
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+  	 
+ 	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/renthouse/i0_x_d_j_t_z_b_k/">任意</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i1_x_d_j_t_z_b_k/">个人</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i2_x_d_j_t_z_b_k/">中介</a></dd>
+	 
+  </div>
+</dl>
+
+<dl>
+  <dt>类型</a></dt>
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+  	 
+ 	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/renthouse/i_x0_d_j_t_z_b_k/">任意</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x1_d_j_t_z_b_k/">住宅</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x2_d_j_t_z_b_k/">别墅</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x3_d_j_t_z_b_k/">写字楼</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x4_d_j_t_z_b_k/">商铺</a></dd>
+	 
+    
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x5_d_j_t_z_b_k/">厂房仓库车库</a></dd>
+	 
+  </div>
+</dl>
+
+<dl>  
+  <dt>租金</dt> 
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/renthouse/i_x_d_j0_t_z_b_k/">任意</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j1_t_z_b_k/">800元以下</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j2_t_z_b_k/">800-1200元</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j3_t_z_b_k/">1200-2000元</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j4_t_z_b_k/">2000-3000元</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j5_t_z_b_k/">3000-5000元</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j6_t_z_b_k/">5000-10000元</a></dd>
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j7_t_z_b_k/">10000元以上</a></dd>
+  </div>
+</dl>
+
+<dl>  
+  <dt>城区</dt> 
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/renthouse/i_x_d0_j_t_z_b_k/">任意</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d1_j_t_z_b_k/">玄武区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d2_j_t_z_b_k/">鼓楼区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d3_j_t_z_b_k/">白下区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d4_j_t_z_b_k/">建邺区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d5_j_t_z_b_k/">秦淮区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d6_j_t_z_b_k/">下关区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d7_j_t_z_b_k/">雨花台区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d8_j_t_z_b_k/">栖霞区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d9_j_t_z_b_k/">江宁区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d10_j_t_z_b_k/">浦口区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d11_j_t_z_b_k/">六合区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d12_j_t_z_b_k/">大厂区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d13_j_t_z_b_k/">溧水区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d14_j_t_z_b_k/">高淳区</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d15_j_t_z_b_k/">其它</a></dd>
+	 
+  </div>
+</dl>
+
+<dl>  
+  <dt>方式</dt> 
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t0_z_b_k/">任意</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t1_z_b_k/">整租</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t2_z_b_k/">合租</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t3_z_b_k/">短租公寓</a></dd>
+	 
+  </div>
+</dl>
+<dl>  
+  <dt>装修</dt> 
+  <span class="choose_switch"><i class="icon-on"></i></span>
+  <div class="choose_opt_list">
+   
+  	  
+		<dd class="checked">
+	 	<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t_z0_b_k/">任意</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t_z1_b_k/">毛坯</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t_z2_b_k/">简装</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t_z3_b_k/">精装</a></dd>
+	 
+  	  
+		 <dd>
+		<a href="http://m.house365.com/nj/renthouse/i_x_d_j_t_z4_b_k/">豪华装</a></dd>
+	 
+  </div>
+</dl>
+
+<!--新的筛选条件end -->
+</div> 
+
+
+<div class="choose_more">更多筛选条件<i class="icon-down"></i></div> 
+
+<!--数据-->
+<h2 class="h2_tabtitle"><span class="cur_title_count"><i class="bhline"></i>出租房源</span><span class="more_link"></span></h2>
+<div id="datalist">
+<div class="tplist">
+<ul>
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44471186.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44471186.html">
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44471186.html">板桥新村 2室1厅1卫 72㎡</a></div>
+          <div class="s-addr">板桥新村</div>
+          <div class="s-addr">2室1厅 72平米</div>
+          <div class="s-price">1300元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44425390.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44425390.html">
+		            <img width="50" height="50" alt="软件大道 真正的地铁口 中兴电子 精装三房 房东急租 看房方便" src="http://img16.house365.com/njhouse/2014/08/21/thumb/140861446553f5c0416b554.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44425390.html">软件大道 真正的地铁口 中兴电子 精装三房 房东急租 看房方便</a></div>
+          <div class="s-addr">宏图上花园</div>
+          <div class="s-addr">3室2厅 130平米</div>
+          <div class="s-price">3900元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44425546.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44425546.html">
+		            <img width="50" height="50" alt="软件大道地铁口 中兴电子旁 出行方便 居家陪读首选 家电全拎包住" src="http://img26.house365.com/njhouse/2014/08/21/thumb/140861510753f5c2c344999.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44425546.html">软件大道地铁口 中兴电子旁 出行方便 居家陪读首选 家电全拎包住</a></div>
+          <div class="s-addr">宏图上花园</div>
+          <div class="s-addr">2室2厅 98平米</div>
+          <div class="s-price">3500元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44425335.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44425335.html">
+		            <img width="50" height="50" alt="仁恒翠竹园 精装两房 金牌物业 家电齐全 首次出租 等着你来入住" src="http://img24.house365.com/njhouse/2014/08/21/thumb/140861423753f5bf5d19d5a.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44425335.html">仁恒翠竹园 精装两房 金牌物业 家电齐全 首次出租 等着你来入住</a></div>
+          <div class="s-addr">仁恒翠竹园</div>
+          <div class="s-addr">2室2厅 96平米</div>
+          <div class="s-price">3800元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44426753.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44426753.html">
+		            <img width="50" height="50" alt="雨花台中学 精装三房 地铁沿线花园小区 居家首选 拎包入住" src="http://img14.house365.com/njhouse/2014/08/21/thumb/140861930653f5d32a4b6a9.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44426753.html">雨花台中学 精装三房 地铁沿线花园小区 居家首选 拎包入住</a></div>
+          <div class="s-addr">仁恒翠竹园</div>
+          <div class="s-addr">3室2厅 125平米</div>
+          <div class="s-price">4800元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44426691.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44426691.html">
+		            <img width="50" height="50" alt="学区房 地铁沿线 精装三房 金牌物业 首次出租 设施齐全 急" src="http://img17.house365.com/njhouse/2014/08/21/thumb/140861914353f5d287902dd.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44426691.html">学区房 地铁沿线 精装三房 金牌物业 首次出租 设施齐全 急</a></div>
+          <div class="s-addr">仁恒翠竹园</div>
+          <div class="s-addr">3室2厅 130平米</div>
+          <div class="s-price">4800元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44425193.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44425193.html">
+		            <img width="50" height="50" alt="学区房 地铁沿线 精装三房 金牌物业 首次出租 设施齐全 急" src="http://img15.house365.com/njhouse/2014/08/21/thumb/140861390653f5be12bcdcd.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44425193.html">学区房 地铁沿线 精装三房 金牌物业 首次出租 设施齐全 急</a></div>
+          <div class="s-addr">仁恒翠竹园</div>
+          <div class="s-addr">3室2厅 130平米</div>
+          <div class="s-price">4800元/月</div>  
+        </div>
+            	<div class="s-tag ctag_label_r">急租</div>
+    	    </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44426737.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44426737.html">
+		            <img width="50" height="50" alt="软件大道 真正的地铁口 中兴电子 精装三房 房东急租 看房方便" src="http://img24.house365.com/njhouse/2014/08/21/thumb/140861926953f5d30533705.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44426737.html">软件大道 真正的地铁口 中兴电子 精装三房 房东急租 看房方便</a></div>
+          <div class="s-addr">宏图上花园</div>
+          <div class="s-addr">3室2厅 130平米</div>
+          <div class="s-price">3900元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44426727.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44426727.html">
+		            <img width="50" height="50" alt="阅城国际花园 精装三房 设施齐全 拎包住 软件大道地铁口" src="http://img17.house365.com/njhouse/2014/08/21/thumb/140861923253f5d2e0b91db.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44426727.html">阅城国际花园 精装三房 设施齐全 拎包住 软件大道地铁口</a></div>
+          <div class="s-addr">阅城国际花园</div>
+          <div class="s-addr">3室2厅 140平米</div>
+          <div class="s-price">4000元/月</div>  
+        </div>
+            	<div class="s-tag ctag_label_r">急租</div>
+    	    </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44425133.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44425133.html">
+		            <img width="50" height="50" alt="雨花台中学 精装三房 地铁沿线花园小区 居家首选 拎包入住" src="http://img17.house365.com/njhouse/2014/08/21/thumb/140861359253f5bcd83fa54.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44425133.html">雨花台中学 精装三房 地铁沿线花园小区 居家首选 拎包入住</a></div>
+          <div class="s-addr">仁恒翠竹园</div>
+          <div class="s-addr">3室2厅 125平米</div>
+          <div class="s-price">4800元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44424905.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44424905.html">
+		            <img width="50" height="50" alt="软件大道地铁口 精装单室套 首次出租 周边配套齐全 急租" src="http://img29.house365.com/njhouse/2014/08/21/thumb/140861250253f5b896f37a4.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44424905.html">软件大道地铁口 精装单室套 首次出租 周边配套齐全 急租</a></div>
+          <div class="s-addr">阅城国际花园</div>
+          <div class="s-addr">1室1厅 50平米</div>
+          <div class="s-price">2650元/月</div>  
+        </div>
+            	<div class="s-tag ctag_label_r">急租</div>
+    	    </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/16665032.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/16665032.html">
+		            <img width="50" height="50" alt="苏宁睿城1室1厅1卫30.00㎡整租精装" src="http://img18.house365.com/njhouse/2014/04/11/thumb/1397184251534756fb05001.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/16665032.html">苏宁睿城1室1厅1卫30.00㎡整租精装</a></div>
+          <div class="s-addr">苏宁睿城</div>
+          <div class="s-addr">1室1厅 30平米</div>
+          <div class="s-price">1400元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44356324.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44356324.html">
+		            <img width="50" height="50" alt="竹山路地铁口 580平可分割精装可注册【骆村大厦租赁部】" src="http://img11.house365.com/njhouse/2014/08/16/thumb/140816004853eed1304fe19.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44356324.html">竹山路地铁口 580平可分割精装可注册【骆村大厦租赁部】</a></div>
+          <div class="s-addr">骆村大厦</div>
+          <div class="s-addr">1室0厅 580平米</div>
+          <div class="s-price">1.8元/天*平方米</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44356217.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44356217.html">
+		            <img width="50" height="50" alt="小龙湾基地总部量身定制拎包办公160至700平【租赁中心】" src="http://img15.house365.com/njhouse/2014/08/16/thumb/140815917553eecdc7828d3.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44356217.html">小龙湾基地总部量身定制拎包办公160至700平【租赁中心】</a></div>
+          <div class="s-addr">企业总部基地</div>
+          <div class="s-addr">1室0厅 358平米</div>
+          <div class="s-price">1.9元/天*平方米</div>  
+        </div>
+            	<div class="s-tag ctag_label_r">急租</div>
+    	    </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44356570.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44356570.html">
+		            <img width="50" height="50" alt="银谷大厦黄金海岸紧邻万达江宁实小旁【银谷大厦租赁部】" src="http://img28.house365.com/njhouse/2014/08/16/thumb/140816158853eed7348d41b.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44356570.html">银谷大厦黄金海岸紧邻万达江宁实小旁【银谷大厦租赁部】</a></div>
+          <div class="s-addr">银谷大厦</div>
+          <div class="s-addr">1室0厅 72平米</div>
+          <div class="s-price">2400元/月</div>  
+        </div>
+            	<div class="s-tag ctag_label_r">急租</div>
+    	    </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/43499046.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/43499046.html">
+		            <img width="50" height="50" alt="新城发展中心江宁地标写字楼金牌物业地铁【新城租赁部】多套" src="http://img13.house365.com/njhouse/2014/06/10/thumb/14023905305396c80289e3a.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/43499046.html">新城发展中心江宁地标写字楼金牌物业地铁【新城租赁部】多套</a></div>
+          <div class="s-addr">新城发展中心</div>
+          <div class="s-addr">2室0厅 185平米</div>
+          <div class="s-price">2.1元/天*平方米</div>  
+        </div>
+            	<div class="s-tag ctag_label_r">急租</div>
+    	    </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/43423220.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/43423220.html">
+		            <img width="50" height="50" alt="浦口区幸福美地3室整租精装新添置三台全新空调" src="http://img15.house365.com/njhouse/2014/06/04/thumb/1401848128538e81403f962.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/43423220.html">浦口区幸福美地3室整租精装新添置三台全新空调</a></div>
+          <div class="s-addr">幸福美地</div>
+          <div class="s-addr">3室1厅 87平米</div>
+          <div class="s-price">1800元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/16895966.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/16895966.html">
+		            <img width="50" height="50" alt="武夷商城3室2厅2卫26.00㎡合租不限男女精装" src="http://img20.house365.com/njhouse/2014/05/02/1399002117536314058eb28.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/16895966.html">武夷商城3室2厅2卫26.00㎡合租不限男女精装</a></div>
+          <div class="s-addr">武夷商城</div>
+          <div class="s-addr">3室2厅 26平米</div>
+          <div class="s-price">650元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44452953.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44452953.html">
+		            <img width="50" height="50" alt="中山南路加油站对面3室1厅1卫73.00㎡合租精装" src="http://img24.house365.com/njhouse/2014/08/23/thumb/140879017953f86ea38a24b.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44452953.html">中山南路加油站对面3室1厅1卫73.00㎡合租精装</a></div>
+          <div class="s-addr">中山南路加油站对面</div>
+          <div class="s-addr">3室1厅 73平米</div>
+          <div class="s-price">1200元/月</div>  
+        </div>
+            </li> 
+ 
+    <li class="p-item" onclick="gourl('http://m.house365.com/nj/renthouse/44121070.html')">
+        <div class="p-img">
+            <a href="http://m.house365.com/nj/renthouse/44121070.html">
+		            <img width="50" height="50" alt="江宁万达 城市CBD中心办公首选房型正高端【万达租赁部】多套" src="http://img27.house365.com/njhouse/2014/08/06/thumb/140730222853e1ba5441534.jpg"/>		 
+				</a>
+         </div>
+         <div class="p-txt">
+          <div class="s-name"><a href="http://m.house365.com/nj/renthouse/44121070.html">江宁万达 城市CBD中心办公首选房型正高端【万达租赁部】多套</a></div>
+          <div class="s-addr">江宁万达广场</div>
+          <div class="s-addr">2室0厅 280平米</div>
+          <div class="s-price">2.1元/天*平方米</div>  
+        </div>
+            </li> 
+</ul>
+</div>
+ 
+</div>
+
+<script type="text/javascript">
+var page=2;
+var url = "http://m.house365.com/index.php?city=nj&app=renthouse";
+
+$(document).ready(function() {
+
+//新加的
+var is_topnav_show=false;
+$(".top_btn_fav").click(function(){
+	if(is_topnav_show){
+		$("#topnav_menu").slideUp();
+		is_topnav_show=false;
+	}else{
+		$("#topnav_menu").slideDown();
+		is_topnav_show=true;
+	}
+});
+$(".topnav_contract").click(function(){
+$("#topnav_menu").slideUp();
+		is_topnav_show=false;
+});
+	$(".choose_opt dl").addClass('choose_line');
+	$(".choose_switch").click(function(){
+		//alert($(this).parent().html());
+		$(this).parent().toggleClass('choose_line');
+		//alert($(this).find("i").hasClass("icon-on"));
+		if($(this).find("i").hasClass("icon-on")){
+			$(this).find("i").removeClass('icon-on');
+			$(this).find("i").toggleClass('icon-off');
+		}else{
+			$(this).find("i").removeClass('icon-off');
+			$(this).find("i").toggleClass('icon-on')
+		}
+	});
+
+	//更多筛选
+	var choose_more=false;
+	var more_choose_up_html ='更多筛选条件<i class="icon-down"></i>';
+	var more_choose_down_html ='精简筛选条件<i class="icon-up"></i>';
+	$(".choose_opt dl:gt(1)").hide(); 
+	$(".choose_more").click(function(){
+		 if(choose_more){ 
+			$(".choose_opt dl:gt(1)").hide();
+			$(this).html(more_choose_up_html);
+			choose_more=false;
+		 }else{ 
+			$(".choose_opt dl:gt(1)").show();
+			$(this).html(more_choose_down_html);
+			choose_more=true;
+		}
+	});
+//已选条件  
+var choose_selected_list_html="";
+if(choose_opts.size()>0){
+for(var i=0;i<choose_opts.size();i++){
+choose_selected_list_html+="<li><label>"+choose_opt_labels[choose_opts.element(i).key]+":</label>"+choose_opts.element(i).value+"</li>";
+}
+$("#choose_selected_list").html(choose_selected_list_html);
+}else{
+$(".choose_selected").hide();
+}
+
+//初始化排序选择
+//initOrderParam();
+//新加end
+
+    var moreitem ='<div class="more_tag">点击加载更多</div>';
+    var nodataitem='<div class="nodata_tag">很抱歉,没有找到相关楼盘信息！</div>';
+    	$("#datalist").append(moreitem);
+    
+     $(".more_tag").click(function(){
+        $(".more_tag").hide();
+        $("#datalist").append('<div class="page_loading"></div>');
+            $.ajax({
+            type: "GET",
+            url: url,
+            data: "page="+page,
+            success: function(msg){
+
+                $(".page_loading").remove();
+                if(msg!=''){
+                    page=page+1;
+                    $("#datalist ul").append(msg);
+                    //$("#datalist").append(moreitem);
+                    $(".more_tag").show();
+                }else{
+                   $(".more_tag").hide();
+                   $("#datalist").append('<div class="nodata_tag">没有更多数据了</div>');  
+                }
+            }
+            });
+    });
+
+    $("#datalist li:even").addClass("bg2");
+
+     //搜索联想
+    $("#searchInput").keyup(function(){
+	var thinkurl = "http://m.house365.com/index.php?app=sellhouse&act=think&city=nj";
+	var searchInput = $("#searchInput").val();
+	if(searchInput.length>=2){
+	$("#sugglist").html('<img src="images/loading.gif"/>');
+	$("#sugglist").show();
+	$.ajax({
+            type: "GET",
+            url: thinkurl,
+	    	dataType:'json',
+            data: "keyword="+$.trim(searchInput),
+            success: function(data){  
+		var sugglisthtml='<ul>';
+		$.each(data, function(i, n){
+			sugglisthtml+="<li bid=\""+n.id+"\">"+n.name+"</li>";
+		});
+		sugglisthtml+='</ul>';
+		if(data.length==0){
+			$("#sugglist").hide();	
+		} 
+		$("#sugglist").html(sugglisthtml); 
+            }
+            });
+	}else{
+	  $("#sugglist").hide();
+	}
+
+	});
+
+	$('#sugglist li').live('click', function() {
+		go_renthouse_block_url($(this).attr("bid"));
+		$("#sugglist").hide();
+	});
+
+});
+</script>
+
+<!--底部导航-->
+<nav class="footernav">
+<ul>
+<li id="footernav_newhouse"><a href="http://m.house365.com/nj/newhouse/" target="_self">新房</a></li>
+<li id="footernav_sellhouse"><a href="http://m.house365.com/nj/sellhouse/" target="_self">二手房</a></li> 
+<li id="footernav_renthouse"><a href="http://m.house365.com/nj/renthouse/" target="_self">租房</a></li>  
+<!--<li><a href="#">家居</a></li>-->
+<li id="footernav_news"><a href="http://m.house365.com/nj/news/">资讯</a></li> 
+<li id="footnav_bbs"><a href="http://m.house365.com/nj/bbs/" target="_self">社区</a></li> 
+</ul>
+</nav>
+<div class="footer">
+    <div class="footer_link"><a href="http://wap.house365.com/rent" class="agray">标准版</a>&nbsp;&nbsp;<a href="javascript:void(0)" class="agray" style="color: #507FBD;">触屏版</a>&nbsp;&nbsp;<a href="http://nj.rent.house365.com/?refrom=touch" class="agray">电脑版</a>&nbsp;&nbsp;<a href="http://app.house365.com/m" class="agray">客户端</a></div>   
+  <div class="f12 fgray" align="center">Copyright &copy; 2013 365地产家居网<br/>m.house365.com 苏ICP证B2-20110162号</div>
+</div>
+
+
+<div class="btn_gotop" id="btn_gotop" style="display:none"></div> 
+<div class="none">
+<img src="http://stat.house365.com/wap_365count.php?website=304" width="0"/>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(["_setAllowHash", true]);
+_gaq.push(["_setAllowAnchor", true]); 
+_gaq.push(["_addOrganic", "baidu", "wd"]);
+_gaq.push(["_addOrganic", "baidu", "word"]);
+_gaq.push(["_addOrganic", "google", "q"]);
+_gaq.push(["_addOrganic", "118114", "kw"]);
+_gaq.push(["_addOrganic", "bing", "q"]);
+_gaq.push(["_addOrganic", "soso", "w"]);
+_gaq.push(["_addOrganic", "youdao", "q"]);
+_gaq.push(["_addOrganic", "sogou", "query"]);
+_gaq.push(["_addOrganic", "so", "q"]);
+_gaq.push(["_setDomainName", "house365.com"]);
+_gaq.push(["_setAccount", "UA-42083344-1"]);
+_gaq.push(["_trackPageview", "南京/租房 -url:http://m.house365.com/nj/renthouse/"]);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+

@@ -7,6 +7,10 @@
 <meta name="keywords" content="{dede:global.cfg_keywords/}" />
 <link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
 <link href="style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link href="{dede:global.cfg_templets_skin/}/css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<LINK rel=stylesheet type=text/css href="css/common.css">
+<link href="{dede:global.cfg_templets_skin/}/css/common.css" rel="stylesheet" media="screen" type="text/css" />
 <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
 <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
 <script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
@@ -33,6 +37,11 @@
 </head>
 <body class="index">
 {dede:include filename="head.htm"/}
+<div class="m">
+
+<div class="banner" style="padding-bottom:7px;"><embed src="{dede:global.cfg_templets_skin/}/swf/2011121915023152.swf" quality="high" extendspage="http://get.adobe.com/flashplayer/" type="application/x-shockwave-flash" wmode="transparent" scale="exactfit" width="100%" height=300></embed></div>
+
+</div>
 <!-- /header -->
 <div class="w960 center clear mt1">
  <div class="pleft">
@@ -125,26 +134,35 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
     </dd>
    </dl>
   </div>
-  <div id="leftAD1" style="margin:10px auto">{dede:myad name='indexLeftBanner'/}</div>
+  
+  <div id="leftAD1" style="margin:10px auto"><!--左广告位--></div>
+  
   <!-- /picnews -->
-  <div class="listbox"> {dede:channelartlist}
-   <dl class="tbox">
-    <dt><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
-    <dd>
-     <ul class="d1 ico3">
-      {dede:arclist titlelen='60' row='8'}
-      <li><span>[field:pubdate function="MyDate('m-d',@me)"/]</span><a href="[field:arcurl /]">[field:title /]</a></li>
-      {/dede:arclist}
-     </ul>
-    </dd>
-   </dl>
-   {/dede:channelartlist} </div>
-  <!-- /listbox -->
+  
+		<div class="listbox">
+	{dede:channelartlist typeid='15,16,17,18,19,20' row=6}
+      <dl class="tbox">
+        <dt><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
+        <dd>
+          <ul class="e6">
+          {dede:arclist row='3' type='image.'}
+           <li><a href="[field:arcurl/]" title="[field:title function='html2text(@me)' /]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a></li>
+		{/dede:arclist}
+          </ul>
+          <ul class="d2 ico3">
+          {dede:arclist titlelen='60' row='5'}
+            <li><span class="date">[field:pubdate function="GetDateMK(@me)"/]</span><a href="[field:arcurl /]">[field:title /]</a></li>
+			{/dede:arclist}
+          </ul>
+        </dd>
+      </dl>
+	{/dede:channelartlist}
+		</div><!-- /listbox -->   
  </div>
  <!-- /pleft -->
  <div class="pright">
-  <div id="rightAD1" style="margin:10px auto"><script src='/plus/mytag_js.php?aid=1' language='javascript'></script>
-</div>
+  <div id="rightAD1" style="margin:10px auto"><!--左广告位--></div>
+  
   <div class="commend mt1">
    <dl class="tbox light">
     <dt class='light'><strong>推荐内容</strong></dt>
@@ -201,7 +219,6 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
  </dl>
 </div>
 <!-- /flink -->
-<div id="footAD" style="margin:10px auto; width:726px">{dede:myad name='indexfooterAD'/}</div>
 {dede:include filename="footer.htm"/}
 <!-- /footer -->
 </body>

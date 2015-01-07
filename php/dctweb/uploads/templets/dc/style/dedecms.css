@@ -163,7 +163,8 @@ input,select,button{
 .header .top{
 	clear:both;
 	overflow:hidden;
-	margin-top:10px;
+	margin-top:1px;
+	height:81px; 
 }
 .header .title{
 	float:left;

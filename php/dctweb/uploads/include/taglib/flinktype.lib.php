@@ -55,10 +55,6 @@ function lib_flinktype(&$ctag,&$refObj)
     {
         $row[] = $dbrow;
     }
-	$dedecms = false;
-	$dedecms->id = 999;
-	$dedecms->typename = '织梦链';
-	if($type == 'dedecms') $row[] = $dedecms;
 	
     foreach ($row as $key => $value) {
         if (is_array($dtp->CTags))

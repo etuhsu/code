@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site>
+<localinfo sitename="织梦cms" ftporrdsserver="FALSE" localroot="F:\code\php\dctweb\uploads\" assetfolder="F:\code\php\dctweb\uploads\SpryAssets\" imagefolder="" spacerfilepath="" refreshlocal="TRUE" autouploadfiles="TRUE" maintainsyncinfo="TRUE" rewritedocrellinks="FALSE" cache="TRUE" httpaddress="http://120.24.217.136/" relativeTo="DOCUMENT" caseSensitiveLinks="FALSE" curserver="appserver"/>
+<remoteinfo accesstype="ftp" host="120.24.217.136" remoteroot="default/" user="www" pw="6F46343B78785A4D74" checkoutname="" emailaddress="" enablecheckin="FALSE" checkoutwhenopen="TRUE" usefirewall="FALSE" usepasv="FALSE" useSFTP="FALSE" useIpv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="gb2312"/>
+<designnotes usedesignnotes="TRUE" sharedesignnotes="FALSE"/>
+<sitemap homepage="" pagesperrow="200" columnwidth="125" showdependentfiles="FALSE" showpagetitles="FALSE" showhiddenfiles="FALSE"/>
+<fileviewcolumns sharecolumns="TRUE">
+    <column name="Local Files" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="131" remotewidth="180" />
+    <column name="Notes" align="center" show="FALSE" share="FALSE" builtin="TRUE" localwidth="36" remotewidth="36" />
+    <column name="Size" align="right" show="TRUE" share="FALSE" builtin="TRUE" localwidth="40" remotewidth="-2" />
+    <column name="Type" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="60" remotewidth="60" />
+    <column name="Modified" align="left" show="TRUE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="102" />
+    <column name="Checked Out By" align="left" show="FALSE" share="FALSE" builtin="TRUE" localwidth="-1" remotewidth="-1" />
+</fileviewcolumns>
+<appserverinfo servermodel="PHP MySQL" urlprefix="http://120.24.217.136/" connectionsmigrated="FALSE" serverobjectsversion="1" defaultdoctype="HTML" accesstype="ftp" host="120.24.217.136" remoteroot="default/" user="www" pw="6F46343B78785A4D74" usefirewall="FALSE" usepasv="FALSE" useSFTP="FALSE" useIPv6="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" testsvrbinaccesstype="ftp" testsvrbinhost="120.24.217.136" testsvrbinremoteroot="default/" user="www" pw="6F46343B78785A4D74" usefirewall="FALSE" usepasv="FALSE" useSFTP="FALSE" useftpoptimization="TRUE" usealternaterename="FALSE" pathNameCharacterSet="gb2312" testsvrbinaccesstype="none"/>
+<cloaking enabled="TRUE" patterns="FALSE">
+    <cloakedfolder folder="dw_php_codehinting.config"/>
+    <cloakedpattern pattern=".png"/>
+    <cloakedpattern pattern=".fla"/>
+</cloaking>
+<contributorintegration enabled="FALSE"/>
+</site>

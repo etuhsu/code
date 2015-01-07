@@ -402,7 +402,7 @@ dt.light strong{
 	padding-top:8px;
 }
 .e6{/* 横排小图列表 102*70 (仅供首页图文混排列表使用) */
-	height:81px;
+	/*height:81px;*/
 	padding-left:6px;
 	clear:both;
 	overflow:hidden;

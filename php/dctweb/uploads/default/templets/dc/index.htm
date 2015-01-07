@@ -47,19 +47,19 @@
  <div class="pleft">
   <div class="bignews">
    <!--头条-->
-   <div class="onenews"> {dede:arclist  typeid='1' flag='h' limit='0,1' infolen='230'}
+   <div class="onenews"> {dede:arclist flag='h' limit='0,1' infolen='230'}
     <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
     <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
     {/dede:arclist} </div>
    <!-- /onenews -->
-   <div class="d1"> {dede:arclist  typeid='1' flag='h' limit='1,4'}
+   <div class="d1"> {dede:arclist flag='h' limit='1,4'}
     <div class='d1arc'><a href="[field:arcurl/]">[field:title/]</a></div>
     {/dede:arclist} </div>
    <!--/头条-->
    <div class='newarticle'>最新文章</div>
    <ul class="c2 ico1">
     <!--最新文档-->
-    {dede:arclist  typeid='1' row=14 titlelen=32 noflag='h'}
+    {dede:arclist row=14 titlelen=32 noflag='h'}
     <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
     {/dede:arclist}
     <!--//最新文档-->
@@ -105,7 +105,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
 </script>
   </div>
   <!-- /flashnews -->
-<!--  <div class="latestnews">
+  <div class="latestnews">
    <dl class="tbox light">
     <dt class="light"><strong>特别推荐</strong></dt>
     <dd class="light">
@@ -116,11 +116,11 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
      </ul>
     </dd>
    </dl>
-  </div>-->
+  </div>
   <!-- /latestnews -->
   <div class="picnews">
    <dl class="tbox light">
-    <dt class='light'><strong>推荐产品</strong></dt>
+    <dt class='light'><strong>图文资讯</strong></dt>
     <dd class='light'>
      <div class="infiniteCarousel">
       <div class="wrapper">
@@ -145,7 +145,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
         <dt><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
         <dd>
           <ul class="e6">
-          {dede:arclist row='3' type='image.'}
+          {dede:arclist row='6' type='image.'}
            <li><a href="[field:arcurl/]" title="[field:title function='html2text(@me)' /]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a></li>
 		{/dede:arclist}
           </ul>
@@ -161,7 +161,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
  </div>
  <!-- /pleft -->
  <div class="pright">
-
+  <div id="rightAD1" style="margin:10px auto"><!--左广告位--></div>
   
   <div class="commend mt1">
    <dl class="tbox light">
@@ -176,8 +176,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
    </dl>
   </div>
   <!-- /commend -->
- <!--  <div id="rightAD1" style="margin:10px auto">左广告位</div>
- <div id="rightAD1" style="margin:10px auto">{dede:myad name='indexRightLitpic2'/}</div>--> 
+  <div id="rightAD1" style="margin:10px auto">{dede:myad name='indexRightLitpic2'/}</div>
   <div class="hot mt1">
    <dl class="tbox light">
     <dt class='light'><strong>本月热点</strong></dt>
@@ -197,7 +196,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
    </dl>
   </div>
   <!-- /vote -->
-  <div style="margin:10 auto"><!--右侧广告--></div>
+  <div style="margin:10 auto">{dede:myad name='indexRtpicAd3'/}</div>
  </div>
  <!-- /pleft -->
 </div>

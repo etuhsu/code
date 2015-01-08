@@ -115,12 +115,17 @@
 	margin:0px 2px;
 }
 /*---------- index ---------*/
+.m {
+	width: 960px;
+	background-color: #FFFFFF;
+	margin: 0 auto;
+}
 .index .bignews{
-	width:424px;
-	height:400px;
-	float:right;
-	border:1px solid #DADADA;
-	overflow:hidden;
+	width: 424px;
+	height: 193px;
+	float: right;
+	border: 1px solid #DADADA;
+	overflow: hidden;
 }
 .index .bignews a{
 	color:#555;

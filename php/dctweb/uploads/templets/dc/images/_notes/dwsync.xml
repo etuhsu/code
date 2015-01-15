@@ -26,7 +26,6 @@
 <file name="bcastr3.swf" server="120.24.217.136/default/" local="130633544116406250" remote="130634013000000000" Dst="0" />
 <file name="banner-header.png" server="120.24.217.136/default/" local="130633544112656250" remote="130634013000000000" Dst="0" />
 <file name="2011121914481934.gif" server="120.24.217.136/default/" local="130639493802500000" remote="130639403400000000" Dst="0" />
-<file name="bg.jpg" server="120.24.217.136/default/" local="130639441232812500" remote="130639403400000000" Dst="0" />
 <file name="busbg.jpg" server="120.24.217.136/default/" local="130639441241718750" remote="130639403400000000" Dst="0" />
 <file name="but_bg_sr2.gif" server="120.24.217.136/default/" local="130633544127343750" remote="130634013000000000" Dst="0" />
 <file name="but_bg_sr3.gif" server="120.24.217.136/default/" local="130633544130156250" remote="130634013000000000" Dst="0" />
@@ -107,4 +106,6 @@
 <file name="more.gif" server="120.24.217.136/default/" local="130639421010625000" remote="130639403400000000" Dst="0" />
 <file name="2011121720564085.jpg.thumb.jpg" server="120.24.217.136/default/" local="130639420985625000" remote="130639403400000000" Dst="0" />
 <file name="button_111.gif" server="120.24.217.136/default/" local="130640321554687500" remote="130640035800000000" Dst="0" />
+<file name="bg3.gif" server="120.24.217.136/default/" local="130652608935000000" remote="130652321400000000" Dst="0" />
+<file name="nav.jpg" server="120.24.217.136/default/" local="130652617441093750" remote="130652329200000000" Dst="0" />
 </dwsync>

@@ -1,0 +1,210 @@
+﻿body, td, th, select, textarea {
+	font-size: 12px;
+	font-family: "宋体", arial, helvetica, sans-serif;
+	color: #444444;
+}
+body, form {
+	margin:0;
+}
+table {
+	border-collapse:collapse;
+}
+input {
+	border:1px solid #c5c6c9;
+	background:url(../images/input_bg1.jpg);
+	font-family: "宋体", arial, helvetica, sans-serif;
+	font-size:12px;
+}
+textarea {
+	border:1px solid #c5c6c9;
+}
+.inputnoborder {
+	border:0px none;
+	background:none;
+}
+a {
+	color:#444444;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#ec0000;
+}
+.agray {
+	color:#999999;
+}
+.awhite {
+	color:#ffffff;
+}
+.an2 {
+	background:url(../images/new_arr.gif) no-repeat left 5px;
+	padding-left:15px;
+}
+.an2:hover, .an2:active {
+	background:url(../images/new_arr_a.gif) no-repeat left 5px;
+}
+#menu {
+	margin:auto;
+	width:1003px;
+	height:118px;
+	position:relative;
+}
+#banner {
+	margin-top:-39px;
+}
+.scroll {
+	scrollbar-face-color:#666666;
+	scrollbar-highlight-color:#ffffff;
+	scrollbar-3dlight-color:#ffffff;
+	scrollbar-darkshadow-color:#ffffff;
+	scrollbar-shadow-color:#ffffff;
+	scrollbar-arrow-color:#ffffff;
+	scrollbar-track-color:#ffffff;
+}
+#prolistdiv, #linkdiv {
+	position:absolute;
+	text-align:left;
+	width:212px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	height:192px;
+	margin:0px;
+	margin-top:-1px;
+	background-color:#ffffff;
+	border:1px solid #c5c6c9;
+	padding:6px;
+	padding-left:10px;
+}
+#prolistdiv a, #linkdiv a {
+	display:block;
+	height:23px;
+	line-height:22px;
+	margin-top:1px;
+	background:url(../images/arr2.gif) no-repeat 3px center;
+	padding-left:11px;
+	white-space:nowrap;
+	width:100%;
+}
+#prolistdiv a:hover, #linkdiv a:hover, #prolistdiv a:active, #linkdiv a:active {
+	background:none;
+	background-color:#ec0000;
+	color:#ffffff;
+}
+.leftbg {
+	border:1px solid #c5c6c9;
+	border-top:0px none;
+	width:172px;
+	padding:8px;
+	background-color:#ffffff;
+}
+#nav_1, .leftborder {
+	border:1px solid #c5c6c9;
+	border-top:0px none;
+	width:172px;
+	padding:8px;
+	background-color:#ffffff;
+}
+#nav_1 a {
+	display:block;
+	height:25px;
+	line-height:25px;
+	width:146px;
+	letter-spacing:2px;
+	background:url(../images/arr4.gif) no-repeat 8px center;
+	padding-left:26px;
+	margin-top:1px;
+}
+#nav_1 a:hover, #navq a:active {
+	background:url(../images/arr4_a.gif) no-repeat 8px center;
+	background-color:#cc0000;
+	color:#ffffff;
+	width:142px;
+	padding-left:28px;
+	font-weight:bold;
+}
+.navaa {
+	background:url(../images/arr4_a.gif) no-repeat 8px center !important;
+	background-color:#cc0000 !important;
+	color:#ffffff !important;
+	width:142px !important;
+	padding-left:28px !important;
+	font-weight:bold !important;
+}
+.btn_nor {
+	width:88px;
+	height:19px;
+	line-height:19px;
+	color:#ffffff;
+	background:url(../images/btn1_bg.gif) no-repeat;
+	text-align:center;
+	border:0px none;
+}
+.ChildSort {
+	float:right;
+}
+.SiteLink a {
+	text-decoration: underline;
+}
+.SiteLink a:hover, #SiteLink a:active {
+	text-decoration: underline;
+}
+.SortFolderOpen {
+	background-image: url(../images/Sort_Folder_Close.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	left: 16px;
+	padding-left: 16px;
+	cursor: hand;
+}
+.SortFolderClose {
+	background-image: url(../images/Sort_Folder_Open.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	left: 16px;
+	padding-left: 16px;
+	cursor: hand;
+}
+.SortEndFolderOpen {
+	background-image: url(../images/SortEnd_Folder_Close.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	left: 16px;
+	padding-left: 16px;
+	cursor: hand;
+}
+.SortEndFolderClose {
+	background-image: url(../images/SortEnd_Folder_Open.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	left: 16px;
+	padding-left: 16px;
+	cursor: hand;
+}
+.SortListline {
+	padding-left: 16px;
+	background-image: url(../images/Sort_Listline.gif);
+	background-repeat: repeat-y;
+}
+.SortEndListline {
+	padding-left: 16px;
+}
+.SortFile {
+	background-image: url(../images/Sort_File.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	cursor: hand;
+	padding-left: 16px;
+}
+.SortFileEnd {
+	background-image: url(../images/Sort_File_End.gif);
+	background-repeat: no-repeat;
+	height: 16px;
+	cursor: hand;
+	padding-left: 16px;
+}
+.SortBg {
+	border:1px solid #c5c6c9;
+	border-top:0px none;
+	width:216px;
+	padding-left:8px;
+	background-color:#ffffff;
+}

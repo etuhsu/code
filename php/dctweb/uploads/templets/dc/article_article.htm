@@ -6,6 +6,7 @@
 <meta name="keywords" content="{dede:field.keywords/}" />
 <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
 <link href="{dede:global.cfg_templets_skin/}/style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="style/dedecms.css" rel="stylesheet" media="screen" type="text/css" />
 <script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
 <script language="javascript" type="text/javascript">
 <!--
@@ -114,7 +115,7 @@ function getDigg(aid)
   <div class="content">
    <table width='100%'>
     <tr>
-     <td><div id="contentMidPicAD" style="float:right; clear:both; top:0; vertical-align:top;">{dede:myad name='contentMidPicAD'/}</div>
+     <td>
       {dede:field.body/}
       {dede:field.vote/}
       (责任编辑：{dede:adminname/})</td>
@@ -201,7 +202,6 @@ function getDigg(aid)
     </dd>
    </dl>
   </div>
-  <div id="contentRtPicAD" style="margin:10px auto">{dede:myad name='contentRtPicAD'/}</div>
   <div class="commend mt1">
    <dl class="tbox light">
     <dt class='light'><strong>推荐内容</strong></dt>
@@ -229,11 +229,9 @@ function getDigg(aid)
     </dd>
    </dl>
   </div>
-  <div id="contentRtPicAD2" style="margin:10px auto">{dede:myad name='contentRtPicAD2'/}</div>
  </div>
  <!-- /pright -->
 </div>
-<div id="innerfooterAD2" style="margin:10px auto; width:726px">{dede:myad name='innerfooterAD2'/}</div>
 {dede:include filename="footer.htm"/}
 <!-- /footer -->
 </body>

@@ -318,6 +318,7 @@ input,select,button{
 .nav ul li a:hover{ text-decoration:underline}
 .w963 {
 	width:960px;
+	margin:0 auto;
 }
 #navMenu {
 	width:915px;
@@ -773,3 +774,4 @@ input,select,button{
 .resultlist ul li span a{
   color:#008400;
  }
+.height2{height:20px;}

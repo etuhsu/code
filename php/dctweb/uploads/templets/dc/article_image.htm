@@ -197,7 +197,7 @@ function getDigg(aid)
              {dede:field name='imgurls' alt='图片输出区'}
                 [field:pagestyle runphp='yes'] @me= (@me==3 ? '<li>' : '');[/field:pagestyle]
                 <a href='[field:linkurl/]' [field:pagestyle runphp='yes'] @me= (@me==3 ? 'class="pic"' : ''); [/field:pagestyle]>
-                  <img src='[field:imgsrc/]' width="240" height="180" id='bigimg' [field:imgwidth /] alt='[field:alttext /]' border='0' />
+                  <img src='[field:imgsrc/]'  id='bigimg' alt='[field:alttext /]' border='0' />
                 </a>
                 <a href='[field:linkurl/]' [field:pagestyle runphp='yes']@me = (@me==3 ? 'class="title"' : '');[/field:pagestyle]>
                 	[field:title /]
@@ -289,7 +289,7 @@ function getDigg(aid)
 
     	<div class="mt1">
 			<dl class="tbox">
-				<dt><strong>热点图集</strong></dt>
+				<dt><strong>热点产品</strong></dt>
 				<dd>
 					<ul class="e3">
                     {dede:arclist row='5' type='image.' orderby=click}
@@ -307,7 +307,7 @@ function getDigg(aid)
         <div id="contentRtPicAD" style="margin:10px auto">{dede:myad name='contentRtPicAD'/}</div>
 		<div class="mt1">
 			<dl class="tbox">
-				<dt><strong>推荐图集</strong></dt>
+				<dt><strong>推荐产品</strong></dt>
 				<dd>
 					<ul class="e9">
                     {dede:arclist row='8' type='image.commend.'}
@@ -317,7 +317,6 @@ function getDigg(aid)
 				</dd>
 			</dl>
 		</div>
-      <div id="contentRtPicAD2" style="margin:10px auto">{dede:myad name='contentRtPicAD2'/}</div>
 
 	</div><!-- /pright -->
 </div>

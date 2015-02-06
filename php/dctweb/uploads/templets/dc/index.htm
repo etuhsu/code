@@ -33,114 +33,27 @@
 </head>
 <body class="index">
 {dede:include filename="head.htm"/}
-<div class="m">
+{dede:include filename="lxqq.htm"/}
 
-  <div class="banner" style="padding-bottom:7px;">
-	  <script language='javascript'>
-      linkarr = new Array();
-      picarr = new Array();
-      textarr = new Array();
-      var swf_width=960;
-      var swf_height=300;
-      //文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
-      var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
-      var files = "";
-      var links = "";
-      var texts = "";
-      var filesban = "";
-      var linksban = "";
-      var textsban = "";
-      //这里设置调用标记
-      {dede:sql sql='select * from #@__flash where ischeck=2 order by sortrank asc limit 0,5'} 
-      picarr[[field:global.autoindex/]]  = "[field:pic/]"; 
-      linkarr[[field:global.autoindex/]]  = "[field:url/]"; 
-      textarr[[field:global.autoindex/]]  = "[field:webname/]"; 
-      {/dede:sql}
-      for(i=1;i<picarr.length;i++){
-      if(filesban=="") filesban = picarr[i];
-      else filesban += "|"+picarr[i];
-      }
-      for(i=1;i<linkarr.length;i++){
-      if(linksban=="") linksban = linkarr[i];
-      else linksban += "|"+linkarr[i];
-      }
-      for(i=1;i<textarr.length;i++){
-      if(textsban=="") textsban = textarr[i];
-      else textsban += "|"+textarr[i];
-      }
-      document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
-      document.write('<param name="movie" value="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf"><param name="quality" value="high">');
-      document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
-      document.write('<param name="FlashVars" value="bcastr_file='+filesban+'&bcastr_link='+linksban+'&bcastr_title='+textsban+'&bcastr_config='+configtg+'">');
-      document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+filesban+'&bcastr_link='+linksban+'&bcastr_title='+textsban+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
-      </script>
-
-  </div>
-
-</div>
 <!-- /header -->
 <div class="w960 center clear mt1">
  <div class="pleft">
+ <a href="/news/"><img src="{dede:global.cfg_templets_skin/}/images/gsjj2.gif" alt="公司简介"></a>
   <div class="bignews">
-   <!--头条-->
-   <div class="onenews"> {dede:arclist  typeid='1' flag='h' limit='0,1' infolen='230'}
-    <h2><a href="[field:arcurl/]">[field:title/]</a></h2>
-    <p>[field:info/]...<a href="[field:arcurl/]">[查看全文]</a></p>
-    {/dede:arclist} </div>
-   <!-- /onenews -->
-   <div class="d1"> {dede:arclist  typeid='1' flag='h' limit='1,4'}
-    <div class='d1arc'><a href="[field:arcurl/]">[field:title/]</a></div>
-    {/dede:arclist} </div>
-   <!--/头条-->
-   <div class='newarticle'>最新文章</div>
-   <ul class="c2 ico1">
-    <!--最新文档-->
-    {dede:arclist  typeid='1' row=14 titlelen=32 noflag='h'}
-    <li><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
-    {/dede:arclist}
-    <!--//最新文档-->
-   </ul>
+      <div class="cf"> 
+<div class="height2"></div>      
+　　岳阳龙岗电磁铁有限公司位于湖南唯一临江口岸城市---岳阳，地理位置优越，交通便利，处于一江两线（（长江、京广铁路、京珠高速公路）、三省四水交汇处，是长江中下游重要航运物流枢纽和中部地区区域物流中心，依托城陵矶万吨集装箱港口，产品运输具备廉价、便捷、安全、节能、大运量的特征和优势。
+<div class="height2"></div>
+　　本公司设备精良，厂房宽敞明亮，技术力量雄厚，是生产电磁、停电保磁设备的专业厂家，主导产品有：起重电磁铁、微机配铁系统，电磁除铁器，电磁搅拌器，大功率应急电源、电缆卷筒及其配套产品等；公司产品型号规格齐全，市场遍布冶金、机械、电力、交通、矿山、化工、水泥等行业，产品畅销国内二十多个省市自治区，并远销日本、欧美和东南亚等国家。
+<div class="height2"></div>
+　　公司坚持从严治厂，引进先进的现代化企业管理机制，不断强化企业员工的综合素质，有良好素质和高度责任心的技术管理团队、有从事几十年制造电磁产品工作经验的高水平生产人员，更是有一支能吃苦耐劳、服务意识强的营销队伍，公司产品强调其实用性、可靠性、经济性，并把实用性和高性价比放在首位，增强了企业的市场竞争能力，为企业发展壮大打好了坚实的基础。
+<div class="height2"></div>
+　　我们将以过硬的质量、一流的信誉、快捷的售后，竭诚为您服务，愿与您建立长期紧密的合作关系，热忱欢迎各位光临指导，共创美好未来。
+<div class="height2"></div>
+      </div>
   </div>
   <!-- /bignews -->
-  <div class="flashnews">
-   <!-- size: 280px * 192px -->
-   <script language='javascript'>
-linkarr = new Array();
-picarr = new Array();
-textarr = new Array();
-var swf_width=280;
-var swf_height=192;
-//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
-var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
-var files = "";
-var links = "";
-var texts = "";
-//这里设置调用标记
-{dede:arclist flag='f' row='5'}
-linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
-picarr[[field:global.autoindex/]]  = "[field:litpic/]";
-textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
-{/dede:arclist}
-for(i=1;i<picarr.length;i++){
-if(files=="") files = picarr[i];
-else files += "|"+picarr[i];
-}
-for(i=1;i<linkarr.length;i++){
-if(links=="") links = linkarr[i];
-else links += "|"+linkarr[i];
-}
-for(i=1;i<textarr.length;i++){
-if(texts=="") texts = textarr[i];
-else texts += "|"+textarr[i];
-}
-document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
-document.write('<param name="movie" value="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf"><param name="quality" value="high">');
-document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
-document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
-document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
-</script>
-  </div>
-  <!-- /flashnews -->
+  
 <!--  <div class="latestnews">
    <dl class="tbox light">
     <dt class="light"><strong>特别推荐</strong></dt>
@@ -176,7 +89,7 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
   <!-- /picnews -->
  
 		<div class="listbox">
-	{dede:channelartlist typeid='15,16,17,18,19,20' row=6}
+	{dede:channelartlist typeid='16,18,19,20' row=4}
       <dl class="tbox">
         <dt><strong><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></strong><span class="more"><a href="{dede:field name='typeurl'/}">更多...</a></span></dt>
         <dd>
@@ -185,11 +98,6 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
            <li><a href="[field:arcurl/]" title="[field:title function='html2text(@me)' /]"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]"/></a></li>
 		{/dede:arclist}
           </ul>
-          <ul class="d2 ico3">
-          {dede:arclist titlelen='60' row='5'}
-            <li><span class="date">[field:pubdate function="GetDateMK(@me)"/]</span><a href="[field:arcurl /]">[field:title /]</a></li>
-			{/dede:arclist}
-          </ul>
         </dd>
       </dl>
 	{/dede:channelartlist}
@@ -197,14 +105,68 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
  </div>
  <!-- /pleft -->
  <div class="pright">
+ <img src="{dede:global.cfg_templets_skin/}/images/tupian.jpg">
+<div class="flashnews">
+   <!-- size: 240px * 192px -->
+   <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=240;
+var swf_height=192;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist flag='f' row='5'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script>
+  </div>
+  <!-- /flashnews -->
 
+<dl class="tbox">
+				<dt><strong>栏目列表</strong></dt>
+				<dd>
+					<ul class="d6">
+                      {dede:channel typeid='2' type='son' currentstyle="<li><a href='~typelink~' class='thisclass'>~typename~</a></li>"}
+		<li><a href='[field:typeurl/]'>[field:typename/]</a></li>{/dede:channel}
+					</ul>
+				</dd>
+			</dl>
+            
+<div class="about">
+<a href="/gongsijieshao/2015/0119/88.html"><img src="{dede:global.cfg_templets_skin/}/images/about.jpg" alt="公司简介"></a>
+
+	</div>
   
   <div class="commend mt1">
    <dl class="tbox light">
-    <dt class='light'><strong>推荐内容</strong></dt>
+    <dt class='light'><strong>公司新闻</strong></dt>
     <dd class='light'>
      <ul class="c1 ico2">
-      {dede:arclist flag='c' titlelen=42 row='16' tagid='dedecms' pagesize='8'}
+      {dede:arclist typeid='1' flag='c' titlelen=42 row='10' tagid='dedecms' pagesize='8'}
       <li class='dotline'><a href="[field:arcurl/]">[field:title/]</a></li>
       {/dede:arclist}
      </ul>
@@ -227,14 +189,14 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
     </dd>
    </dl>
   </div>
-  <div class="vote mt1">
+<!--  <div class="vote mt1">
    <dl class="tbox light">
-    <dt class='light'><strong>其他栏目</strong></dt>
-    <dd class='light'>1111</dd>
-    <dd class='light'>1111</dd>
-    <dd class='light'>1111</dd>
+    <dt class='light'><strong>栏目</strong></dt>
+    <dd class='light'></dd>
+    <dd class='light'></dd>
+    <dd class='light'></dd>
    </dl>
-  </div>
+  </div>-->
   <!-- /vote -->
   <div style="margin:10 auto"><!--右侧广告--></div>
  </div>
@@ -263,3 +225,13 @@ document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr
 <!-- /footer -->
 </body>
 </html>
+<!-- 百度统计yylgdc -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?10db54191a4f11bd593671cede41a065";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

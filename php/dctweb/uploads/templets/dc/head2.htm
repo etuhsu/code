@@ -1,52 +1,90 @@
-<div class="header_top">  
-    <div class="w960 center">  
-     <span id="time" class="time">织梦CMS - 轻松建站从此开始！</span>
-     <div class="toplinks"><a href="{dede:global.cfg_cmsurl/}/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="{dede:global.cfg_cmsurl/}/data/sitemap.html" target="_blank">网站地图</a>|<a href="{dede:global.cfg_cmsurl/}/tags.php">TAG标签</a><a href="{dede:global.cfg_dataurl/}/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a>]</span></div>
-    </div> 
-</div>
+<link rel="stylesheet" type="text/css" href="style/dedecms.css"/>
 <div class="header">
 	<div class="top w960 center">
       <div class="title">
-        <h1><a href="{dede:global.cfg_basehost/}"><img src="{dede:global.cfg_templets_skin/}/images/logo.gif" height="54" width="216" alt="{dede:global.cfg_webname/}"/></a> </h1>
+        <h1><script src='/plus/ad_js.php?aid=21' language='javascript'></script>
+</h1>
       </div>
-      <div class="banner">{dede:myad name='contentTopBanner1'/}</div>
-      <div class="banner2">{dede:myad name='contentTopBanner2'/}</div>
+      <div class="header_top">  
+        <div class="center">  
+          <div class="toplinks"><a href="{dede:global.cfg_cmsurl/}/plus/heightsearch.php" target="_blank">高级搜索</a>|<a href="{dede:global.cfg_cmsurl/}/data/sitemap.html" target="_blank">网站地图</a>|<a href="{dede:global.cfg_cmsurl/}/tags.php">TAG标签</a><a href="{dede:global.cfg_dataurl/}/rssmap.html" class="rss">RSS订阅</a><span>[<a href=""onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('{dede:global.cfg_basehost/}');">设为首页</a>] [<a href="javascript:window.external.AddFavorite('{dede:global.cfg_basehost/}','{dede:global.cfg_webname/}')">加入收藏</a>]</span></div>
+        </div> 
+      </div>
        
 	</div><!-- //top -->
 	<!-- //菜单 -->
 	<div class="module blue mT10 wrapper w963">
-  	<div class="top">
+    </div>
+</div>    
     	<!-- //如果不使用currentstyle，可以在channel标签加入 cacheid='channeltoplist' 属性提升性能 -->
-    <div id="navMenu">
-    	<ul>
-      	<li><a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a></li>
-      	{dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
-      	<li><a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a></li>
-      	{/dede:channel}
-    	</ul>
-    </div>	
-    <div class="search">
-      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
-        <div class="form">
-          <h4>搜索</h4>
-           <input type="hidden" name="kwtype" value="0" />
-           <input name="q" type="text" class="search-keyword" id="search-keyword" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}"  onblur="if(this.value==''){this.value='在这里搜索...';}" />
-           <select name="searchtype" class="search-option" id="search-option">
-               <option value="title" selected='1'>检索标题</option>
-               <option value="titlekeyword">智能模糊</option>
-           </select>
-          <button type="submit" class="search-submit">搜索</button>
-        </div>
-        </form>
-        <div class="tags">
-          <h4>热门标签:</h4>
-          <ul>
-          {dede:tag row='10' getall='1' sort='month'}
-            <li><a href='[field:link/]'>[field:tag /]</a></li>
-          {/dede:tag}
-          </ul>
-        </div>
-    </div><!-- //search -->
-		</div>
-	</div>
-</div><!-- //header -->
+        <div class="bg_nav">
+<div class="nav w963">
+		<ul>
+
+			<li><a href="/" class="current">网站首页</a></li>
+
+			<li><a href="/gongsijieshao/">公司简介</a></li>
+
+			<li><a href="/news/">行业新闻</a></li>
+            
+			<li><a href="/product/">产品展示</a></li>
+
+			<li><a href="/credit/">荣誉资质</a></li>
+
+			<li><a href="/job/">人才招聘</a></li>
+
+			<li><a href="/plus/guestbook.php">客户留言</a></li>
+
+			<li><a href="/contact/">联系我们</a></li>
+
+		</ul>
+
+	</div>    
+    </div>
+
+<!-- //header -->
+<div class="m">
+ 
+  <div class="banner" style="padding-bottom:7px;">
+	  <script language='javascript'>
+      linkarr = new Array();
+      picarr = new Array();
+      textarr = new Array();
+      var swf_width=960;
+      var swf_height=300;
+      //文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+      var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+      var files = "";
+      var links = "";
+      var texts = "";
+      var filesban = "";
+      var linksban = "";
+      var textsban = "";
+      //这里设置调用标记
+      picarr[1]  = "/uploads/flash/1501081627004241.jpg"; 
+      textarr[1]  = "致力改革技术 追求品质卓越";picarr[2]  = "/uploads/flash/1501081605524877.jpg"; 
+      textarr[2]  = "快速响应市场发展 ，永不放弃质量原则";picarr[3]  = "/uploads/flash/1501081606178590.jpg"; 
+      textarr[3]  = "诚信为本，用户至上，互利双赢，质量立业";
+      for(i=1;i<picarr.length;i++){
+      if(filesban=="") filesban = picarr[i];
+      else filesban += "|"+picarr[i];
+      }
+      for(i=1;i<linkarr.length;i++){
+      if(linksban=="") linksban = linkarr[i];
+      else linksban += "|"+linkarr[i];
+      }
+      for(i=1;i<textarr.length;i++){
+      if(textsban=="") textsban = textarr[i];
+      else textsban += "|"+textarr[i];
+      }
+      document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+      document.write('<param name="movie" value="/templets/default/images/bcastr3.swf"><param name="quality" value="high">');
+      document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+      document.write('<param name="FlashVars" value="bcastr_file='+filesban+'&bcastr_title='+textsban+'&bcastr_config='+configtg+'">');
+      document.write('<embed src="/templets/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+filesban+'&bcastr_title='+textsban+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+      </script>
+ 
+  </div>
+ 
+</div>
+<!-- /header -->

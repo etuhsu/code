@@ -121,12 +121,14 @@
 	margin: 0 auto;
 }
 .index .bignews{
-	width: 424px;
-	height: 193px;
-	float: right;
+	float: left;
 	border: 1px solid #DADADA;
 	overflow: hidden;
 }
+.index .bignews .cf{
+	font-size:16px;
+	line-height:22px;
+	}
 .index .bignews a{
 	color:#555;
 }
